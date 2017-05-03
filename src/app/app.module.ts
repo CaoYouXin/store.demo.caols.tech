@@ -8,6 +8,9 @@ import {AppComponent} from "./app.component";
 import {IndexComponent} from "./index/index.component";
 import {GalleryComponent} from "./gallery/gallery.component";
 import {SearchComponent} from "./search/search.component";
+import {GoodsList1ColComponent} from "./goodslist/onecol/component";
+import {GoodsList2ColsComponent} from "./goodslist/twocols/component";
+import {FooterComponent} from "./footer/footer.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
@@ -20,7 +23,10 @@ export class MyHammerConfig extends HammerGestureConfig {
         AppComponent,
         IndexComponent,
         GalleryComponent,
-        SearchComponent
+        SearchComponent,
+        GoodsList1ColComponent,
+        GoodsList2ColsComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,

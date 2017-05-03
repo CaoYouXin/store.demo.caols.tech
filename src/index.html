@@ -31,7 +31,6 @@
         data.width = parseInt(data.width) || 500;
 
         function fixScreen() {
-            console.log(window.screen.availWidth);
             if (isMobile || window.screen.availWidth < data.width) { // 定宽
                 if (isAndroid) {
                     var medium_dpi = data.width / window.screen.availWidth * window['devicePixelRatio'] * 160;

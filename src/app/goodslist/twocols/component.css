@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+ul > li {
+    float: left;
+    width: 220px;
+    height: 200px;
+    background-color: indianred;
+}
+
+ul > li:nth-child(odd) {
+    margin: 20px 10px 0 20px;
+}
+
+ul > li:nth-child(even) {
+    margin: 20px 20px 0 10px;
+}

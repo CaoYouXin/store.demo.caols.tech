@@ -1,0 +1,41 @@
+.flex-wrapper {
+    display: flex;
+    width: 500px;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+.flex-wrapper > .btn {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: solid 1px #DDDDDD;
+    cursor: default;
+}
+
+.flex-wrapper > .btn:hover, .flex-wrapper > .btn:focus {
+    background-color: #DDDDDD;
+}
+
+.flex-wrapper.col {
+    flex-direction: column;
+    height: 400px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.flex-wrapper > img {
+    width: 500px;
+}
+
+.flex-wrapper > img:nth-child(1) {
+    height: 100px;
+}
+
+.flex-wrapper > img:nth-child(2) {
+    height: 300px;
+}

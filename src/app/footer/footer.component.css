@@ -1,0 +1,23 @@
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: #d1d1d1;
+    margin: 20px 0 30px;
+}
+
+.flex-wrapper {
+    display: flex;
+    width: 300px;
+    margin: 0 auto 50px;
+    overflow: hidden;
+}
+
+.flex-wrapper > .btn {
+    flex-grow: 1;
+    text-align: center;
+    cursor: default;
+}
+
+.flex-wrapper > .btn:hover, .flex-wrapper > .btn:focus {
+    color: blueviolet;
+}
