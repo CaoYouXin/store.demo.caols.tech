@@ -7,6 +7,7 @@ import {AppRoutingModule} from "./route/app-routing.module";
 import {AppComponent} from "./app.component";
 import {IndexComponent} from "./index/index.component";
 import {GalleryComponent} from "./gallery/gallery.component";
+import {SearchComponent} from "./search/search.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
@@ -18,7 +19,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     declarations: [
         AppComponent,
         IndexComponent,
-        GalleryComponent
+        GalleryComponent,
+        SearchComponent
     ],
     imports: [
         BrowserModule,

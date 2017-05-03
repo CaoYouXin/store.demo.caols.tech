@@ -90,7 +90,9 @@ export class GalleryComponent implements OnInit {
             self.toTheLeft();
             self.timeout = setTimeout(self.callback, 3000, self);
         };
-        this.timeout = setTimeout(this.callback, 3000, this);
+        if (this.auto) {
+            this.timeout = setTimeout(this.callback, 3000, this);
+        }
     }
 
     itemClicked(item) {
@@ -105,13 +107,18 @@ export class GalleryComponent implements OnInit {
         this.isSwipe = true;
         clearTimeout(this.timeout);
         this.toTheLeft();
-        this.timeout = setTimeout(this.callback, 3000, this);
+
+        if (this.auto) {
+            this.timeout = setTimeout(this.callback, 3000, this);
+        }
     }
 
     onSwipeRight() {
         this.isSwipe = true;
         clearTimeout(this.timeout);
         this.toTheRight();
-        this.timeout = setTimeout(this.callback, 3000, this);
+        if (this.auto) {
+            this.timeout = setTimeout(this.callback, 3000, this);
+        }
     }
 }

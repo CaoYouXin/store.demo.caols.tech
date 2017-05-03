@@ -31,15 +31,16 @@
         data.width = parseInt(data.width) || 500;
 
         function fixScreen() {
-            if (isMobile || window.innerWidth < data.width) { // 定宽
+            console.log(window.screen.availWidth);
+            if (isMobile || window.screen.availWidth < data.width) { // 定宽
                 if (isAndroid) {
-                    var medium_dpi = data.width / window.innerWidth * window['devicePixelRatio'] * 160;
+                    var medium_dpi = data.width / window.screen.availWidth * window['devicePixelRatio'] * 160;
 
                     medium_dpi = medium_dpi.toFixed(2);
 
                     data['target-densitydpi'] = medium_dpi;
                 } else {
-                    var scale = window.innerWidth / data.width;
+                    var scale = window.screen.availWidth / data.width;
 
                     scale = scale.toFixed(2);
 
@@ -54,9 +55,9 @@
 
         var lastWidth = -1;
         var interval = setInterval(function () {
-            if (lastWidth !== window.innerWidth) {
+            if (lastWidth !== window.screen.availWidth) {
                 fixScreen();
-                lastWidth = window.innerWidth;
+                lastWidth = window.screen.availWidth;
             }
         }, 1991);
     </script>

@@ -1,0 +1,41 @@
+.wrapper {
+    width: 480px;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px #DDDDDD;
+    font-size: 0;
+}
+
+.wrapper.focused {
+    box-shadow: 0 0 5px blue;
+}
+
+.wrapper > * {
+    display: inline-block;
+    vertical-align: middle;
+
+    height: 20px;
+    line-height: 20px;
+}
+
+.wrapper:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+
+.wrapper > i {
+    width: 20px;
+    background: url("../../assets/search.png") no-repeat center;
+    background-size: contain;
+}
+
+.wrapper > input {
+    width: 440px;
+    font-size: 16px;
+    outline: none;
+    margin-left: 5px;
+}
