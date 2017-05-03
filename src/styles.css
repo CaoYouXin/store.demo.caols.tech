@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.center {
+    margin: 0 auto;
+    width: 500px;
+}
+
+@media screen and (min-width: 820px) {
+    body {
+        padding: calc(175px / 1489 * 500) 0 calc(240px / 1489 * 500);
+    }
+
+    #phone-top {
+        position: fixed;
+        z-index: 10000;
+
+        height: calc(175px / 1489 * 500);
+
+        top: 0;
+        left: calc(50% - 250px - 10px);
+        right: calc(50% - 250px - 10px);
+
+        background-image: url("./assets/phone-top.png");
+        background-size: 100%;
+    }
+
+    #phone-right {
+        position: fixed;
+        z-index: 10000;
+
+        width: 10px;
+
+        top: calc(175px / 1489 * 500);
+        bottom: calc(240px / 1489 * 500);
+        right: calc(50% - 250px - 10px);
+
+        background-image: url("./assets/phone-right.png");
+        background-size: 100%;
+    }
+
+    #phone-bottom {
+        position: fixed;
+        z-index: 10000;
+
+        height: calc(240px / 1489 * 500);
+
+        bottom: 0;
+        left: calc(50% - 250px - 10px);
+        right: calc(50% - 250px - 10px);
+
+        background-image: url("./assets/phone-bottom.png");
+        background-size: 100%;
+    }
+
+    #phone-left {
+        position: fixed;
+        z-index: 10000;
+
+        width: 10px;
+
+        top: calc(175px / 1489 * 500);
+        bottom: calc(240px / 1489 * 500);
+        left: calc(50% - 250px - 10px);
+
+        background-image: url("./assets/phone-left.png");
+        background-size: 100%;
+    }
+}

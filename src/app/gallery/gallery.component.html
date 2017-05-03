@@ -1,0 +1,16 @@
+<div class="gallery">
+    <ul (swipeleft)="onSwipeLeft()"
+        (swiperight)="onSwipeRight()">
+        <li class="gallery-item"
+            *ngFor="let item of items"
+            (click)="itemClicked(item)"
+            [style.backgroundImage]="item.src"
+            [style.backgroundSize]="bgSize"
+            [class.animation]="animation"
+            [class.left]="item.left | async"
+            [class.right]="item.right | async"></li>
+    </ul>
+    <div class="gallery-indicator">
+        <span *ngFor="let it of _items;let i = index" [class.active]="i === activeIndex"></span>
+    </div>
+</div>
