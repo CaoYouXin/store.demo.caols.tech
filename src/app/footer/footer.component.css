@@ -8,7 +8,7 @@ hr {
 .flex-wrapper {
     display: flex;
     width: 300px;
-    margin: 0 auto 50px;
+    margin: 0 auto 100px;
     overflow: hidden;
 }
 

@@ -6,8 +6,6 @@ ul {
 ul > li {
     float: left;
     width: 220px;
-    height: 200px;
-    background-color: indianred;
 }
 
 ul > li:nth-child(odd) {
@@ -16,4 +14,39 @@ ul > li:nth-child(odd) {
 
 ul > li:nth-child(even) {
     margin: 20px 20px 0 10px;
+}
+
+ul > li > div {
+    width: 220px;
+    height: 220px;
+    background-size: contain;
+}
+
+
+ul > li > p {
+    line-height: 1.2em;
+    height: 2.4em;
+    width: 100%;
+    padding: 0 .5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul > li > span {
+    float: left;
+    line-height: 40px;
+    color: indianred;
+}
+
+ul > li > span:before {
+    content: '￥';
+}
+
+ul > li > i {
+    float: right;
+    width: 40px;
+    height: 40px;
+
+    background: url("../../../assets/cart.png") no-repeat center;
+    background-size: 80%;
 }

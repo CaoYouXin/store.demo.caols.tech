@@ -20,19 +20,16 @@ export class GalleryComponent implements OnInit {
     timeout;
     callback;
 
-    bgSize = 'cover';
     animation = true;
-    items: Array<any> = [{
-        src: this.sanitizer.bypassSecurityTrustStyle('url("http://pic.pimg.tw/hanoops/1312220914-38069c6af94ade4fa4d3ea2dabdfbf8c.jpg")')
-    }];
+    items: Array<any> = [];
     _items = [{
-        src: this.sanitizer.bypassSecurityTrustStyle('url("http://pic.pimg.tw/hanoops/1312220914-38069c6af94ade4fa4d3ea2dabdfbf8c.jpg")')
+        src: 'url("../../assets/goods1.png")'
     }, {
-        src: this.sanitizer.bypassSecurityTrustStyle('url("http://pic.jiaren.org/wp-pic/2011/06/1.jpg")')
+        src: 'url("../../assets/goods2.png")'
     }, {
-        src: this.sanitizer.bypassSecurityTrustStyle('url("http://pic.pimg.tw/hanoops/1312220914-38069c6af94ade4fa4d3ea2dabdfbf8c.jpg")')
+        src: 'url("../../assets/goods1.png")'
     }, {
-        src: this.sanitizer.bypassSecurityTrustStyle('url("http://pic.jiaren.org/wp-pic/2011/06/1.jpg")')
+        src: 'url("../../assets/goods2.png")'
     }];
     activeIndex = 0;
 
