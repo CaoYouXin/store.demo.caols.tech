@@ -8,6 +8,8 @@ import {DomSanitizer} from "@angular/platform-browser";
 })
 export class GoodsList2ColsComponent {
 
+    private isCartClicked: boolean;
+
     list: Array<any> = [{
         image: 'url("../../assets/goods1.png")',
         name: 'name name name name name name name name name',
@@ -31,4 +33,17 @@ export class GoodsList2ColsComponent {
     }];
 
     constructor(private domSanitizer: DomSanitizer) {}
+
+    goToDetail(item: any) {
+        if (this.isCartClicked) {
+            this.isCartClicked = false;
+            return;
+        }
+        alert('detail ' + item.name);
+    }
+
+    addToCart(item: any) {
+        this.isCartClicked = true;
+        alert('cart ' + item.name);
+    }
 }

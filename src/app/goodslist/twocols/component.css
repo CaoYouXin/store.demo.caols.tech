@@ -6,6 +6,8 @@ ul {
 ul > li {
     float: left;
     width: 220px;
+    background-color: #d1d1d1;
+    border: solid 1px #dddddd;
 }
 
 ul > li:nth-child(odd) {
@@ -17,9 +19,10 @@ ul > li:nth-child(even) {
 }
 
 ul > li > div {
-    width: 220px;
-    height: 220px;
+    width: 218px;
+    height: 218px;
     background-size: contain;
+    background-color: white;
 }
 
 

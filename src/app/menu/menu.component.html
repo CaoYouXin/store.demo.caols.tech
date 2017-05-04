@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="btn"></div>
+    <div class="btn" (click)="category=true"><span>商品分类</span></div>
+    <div class="btn" (click)="recommend=true"><span>入店必买</span></div>
+    <div class="btn" (click)="ordermanagement=true"><span>订单管理</span></div>
+</div>
+
+<div class="blur" *ngIf="category || recommend || ordermanagement"
+    (click)="category=recommend=ordermanagement=false"></div>
+
+<ul class="category" *ngIf="category">
+    <li>分类</li>
+    <li>分类分类</li>
+    <li>分类分类分类</li>
+    <li>全部商品</li>
+</ul>
+
+<ul class="recommend" *ngIf="recommend">
+    <li>商品1</li>
+    <li>商品1商品1</li>
+    <li>商品1商品1商品1商品1</li>
+    <li>商品1商品1商品1</li>
+</ul>
+
+<ul class="ordermanagement" *ngIf="ordermanagement">
+    <li>购物车</li>
+    <li>订单列表</li>
+    <li>联系客服</li>
+</ul>

@@ -1,8 +1,8 @@
 <ul>
-    <li *ngFor="let item of list">
+    <li *ngFor="let item of list" (click)="goToDetail(item)">
         <div [style.backgroundImage]="item.image"></div>
         <p>{{item.name}}</p>
         <span>{{item.price}}</span>
-        <i></i>
+        <i (click)="addToCart(item)"></i>
     </li>
 </ul>

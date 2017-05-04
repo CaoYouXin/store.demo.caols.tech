@@ -11,8 +11,9 @@
     padding: 5px;
     margin: 0 10px;
     border-radius: 5px;
-    border: solid 1px #DDDDDD;
+    border: solid 1px #dddddd;
     cursor: default;
+    background-color: white;
 }
 
 .flex-wrapper > .btn:hover, .flex-wrapper > .btn:focus {
@@ -26,6 +27,10 @@
 
 .margin-top-10 {
     margin-top: 10px;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 .flex-wrapper > img {

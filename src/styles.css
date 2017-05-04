@@ -11,6 +11,10 @@
     width: 500px;
 }
 
+body {
+    background-color: ivory;
+}
+
 @media screen and (min-width: 520px) {
     body {
         padding: calc(175px / 1489 * 500) 0 calc(240px / 1489 * 500);

@@ -1,0 +1,149 @@
+.wrapper {
+    position: fixed;
+    z-index: 1000;
+
+    left: calc(50% - 250px);
+    right: calc(50% - 250px);
+    bottom: 0;
+
+    height: 50px;
+
+    background-color: white;
+    border-top: solid 1px #dddddd;
+}
+
+.wrapper > .btn {
+    float: left;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.wrapper > .btn > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper > .btn:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../../assets/menu.png") no-repeat center;
+    background-size: 80%;
+}
+
+.wrapper > .btn:hover, .wrapper > .btn:focus {
+    background-color: #d1d1d1;
+}
+
+.wrapper > .btn + .btn {
+    border-left: solid 1px #DDDDDD;
+}
+
+.wrapper > .btn:first-child {
+    width: 50px;
+}
+
+.wrapper > .btn:first-child:before {
+    background: url("../../assets/home.png") no-repeat center;
+    background-size: 110%;
+}
+
+.blur {
+    position: fixed;
+    z-index: 1001;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: transparent;
+}
+
+ul.category {
+    left: 70px;
+}
+
+ul.recommend {
+    left: 200px;
+}
+
+ul.ordermanagement {
+    left: 400px;
+}
+
+ul {
+    list-style: none;
+
+    position: fixed;
+    z-index: 1002;
+
+    bottom: 60px;
+
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px #dddddd;
+}
+
+ul > li {
+    padding: 5px;
+
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul > li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul > li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul > li:hover, ul > li:focus {
+    background-color: #d1d1d1;
+}
+
+ul > li + li {
+    border-top: solid 1px #DDDDDD;
+}
+
+ul:before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: solid 10px transparent;
+    border-top-color: #DDDDDD;
+}
+
+ul:after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: solid 8px transparent;
+    border-top-color: white;
+}
+
+@media screen and (min-width: 520px) {
+    .wrapper {
+        bottom: calc(240px / 1489 * 500);
+    }
+
+    ul {
+        bottom: calc(240px / 1489 * 500 + 60px);
+    }
+}

@@ -11,6 +11,7 @@ import {SearchComponent} from "./search/search.component";
 import {GoodsList1ColComponent} from "./goodslist/onecol/component";
 import {GoodsList2ColsComponent} from "./goodslist/twocols/component";
 import {FooterComponent} from "./footer/footer.component";
+import {MenuComponent} from "./menu/menu.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
@@ -21,6 +22,7 @@ export class MyHammerConfig extends HammerGestureConfig {
 @NgModule({
     declarations: [
         AppComponent,
+        MenuComponent,
         IndexComponent,
         GalleryComponent,
         SearchComponent,
