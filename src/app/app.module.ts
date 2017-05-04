@@ -12,6 +12,7 @@ import {GoodsList1ColComponent} from "./goodslist/onecol/component";
 import {GoodsList2ColsComponent} from "./goodslist/twocols/component";
 import {FooterComponent} from "./footer/footer.component";
 import {MenuComponent} from "./menu/menu.component";
+import {Add2CartComponent} from "./add2cart/add2cart.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
@@ -23,6 +24,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     declarations: [
         AppComponent,
         MenuComponent,
+        Add2CartComponent,
         IndexComponent,
         GalleryComponent,
         SearchComponent,

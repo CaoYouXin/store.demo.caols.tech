@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, EventEmitter, Output} from "@angular/core";
 import {DomSanitizer} from "@angular/platform-browser";
 
 @Component({
@@ -32,6 +32,9 @@ export class GoodsList2ColsComponent {
         price: '20.00'
     }];
 
+    @Output()
+    add2Cart = new EventEmitter();
+
     constructor(private domSanitizer: DomSanitizer) {}
 
     goToDetail(item: any) {
@@ -44,6 +47,6 @@ export class GoodsList2ColsComponent {
 
     addToCart(item: any) {
         this.isCartClicked = true;
-        alert('cart ' + item.name);
+        this.add2Cart.emit(item);
     }
 }

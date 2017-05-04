@@ -13,7 +13,11 @@
     <img src="../../assets/goods2.png" alt="">
 </div>
 
-<app-goods-list-2-cols></app-goods-list-2-cols>
+<app-goods-list-2-cols (add2Cart)="add2cartClicked($event)"></app-goods-list-2-cols>
 
 <app-footer></app-footer>
 <app-menu></app-menu>
+<app-add2cart [show]="showAdd2Cart | async"
+              [bgImage]="add2CartBgImage"
+              [name]="add2CartName"
+              [price]="add2CartPrice"></app-add2cart>

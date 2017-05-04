@@ -1,0 +1,30 @@
+<div class="wrapper" [class.show]="show">
+    <div style="overflow: hidden">
+        <div class="cover" [style.backgroundImage]="bgImage"></div>
+        <div class="info">
+            <p>{{name}}</p>
+            <span>{{price}}</span>
+        </div>
+        <div class="close" (click)="show=false"></div>
+    </div>
+    <hr>
+    <p class="style-text">选择款式: </p>
+    <ul class="style-list">
+        <li class="style-item" *ngFor="let style of styles">{{style}}</li>
+    </ul>
+    <hr>
+    <div style="overflow: hidden">
+        <p class="count-text">选购数量: </p>
+        <div class="count">
+            <div class="minus" [class.unusable]="count===1" (click)="countMinus()">-</div>
+            <input type="text" [(ngModel)]="count" (ngModelChange)="countChange($event)" placeholder="1">
+            <div class="add" (click)="count=count+1">+</div>
+        </div>
+    </div>
+    <div class="btns">
+        <div class="btn">加入购物车</div>
+        <div class="btn">立即购买</div>
+    </div>
+</div>
+
+<div class="blur" *ngIf="show" (click)="show=false"></div>
