@@ -1,0 +1,49 @@
+<app-gallery [auto]="true" [height]="galleryHeight"></app-gallery>
+
+<div class="info">
+    <p class="name">{{name}}</p>
+    <span class="price">{{price}}</span>
+</div>
+
+<div class="choose-style" (click)="callAdd2CartOut()">
+    <p>选择款式</p>
+    <p>></p>
+</div>
+
+<div class="btns">
+    <div class="btn" [class.active]="showGoodsDetail"
+        (click)="showGoodsDetail=true">商品详情</div>
+    <div class="btn" [class.active]="!showGoodsDetail"
+        (click)="showGoodsDetail=false">商品评价</div>
+</div>
+
+<div class="goods-detail" *ngIf="showGoodsDetail">
+    <img src="../../assets/goods1.png" alt="">
+    <img src="../../assets/banner.png" alt="">
+    <img src="../../assets/goods2.png" alt="">
+</div>
+<div class="goods-comments" *ngIf="!showGoodsDetail">
+    <div class="btns">
+        <div class="btn" [class.active]="showCommentsLevel===0"
+            (click)="showCommentsLevel=0">全部评价</div>
+        <div class="btn" [class.active]="showCommentsLevel===1"
+            (click)="showCommentsLevel=1">好评</div>
+        <div class="btn" [class.active]="showCommentsLevel===2"
+            (click)="showCommentsLevel=2">中评</div>
+        <div class="btn" [class.active]="showCommentsLevel===3"
+            (click)="showCommentsLevel=3">差评</div>
+    </div>
+    <div class="none-comment" *ngIf="comments.length===0">
+        没有评价
+    </div>
+    <ul class="comments">
+        <li *ngFor="let comment of comments">{{comment}}</li>
+    </ul>
+</div>
+
+<app-footer></app-footer>
+<app-ctrls (btnClick)="callAdd2CartOut()"></app-ctrls>
+<app-add2cart [show]="showAdd2Cart | async"
+              [bgImage]="bgImage"
+              [name]="name"
+              [price]="price"></app-add2cart>

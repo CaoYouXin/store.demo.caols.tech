@@ -1,10 +1,12 @@
-<div class="gallery">
+<div class="gallery" [style.height]="height">
     <ul (swipeleft)="onSwipeLeft()"
-        (swiperight)="onSwipeRight()">
+        (swiperight)="onSwipeRight()"
+        [style.height]="height">
         <li class="gallery-item"
             *ngFor="let item of items"
             (click)="itemClicked(item)"
             [style.backgroundImage]="item.src"
+            [style.height]="height"
             [class.animation]="animation"
             [class.left]="item.left | async"
             [class.right]="item.right | async"></li>

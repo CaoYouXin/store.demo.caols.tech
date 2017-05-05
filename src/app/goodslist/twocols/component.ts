@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Output} from "@angular/core";
 import {DomSanitizer} from "@angular/platform-browser";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-goods-list-2-cols',
@@ -35,14 +36,14 @@ export class GoodsList2ColsComponent {
     @Output()
     add2Cart = new EventEmitter();
 
-    constructor(private domSanitizer: DomSanitizer) {}
+    constructor(private router: Router) {}
 
     goToDetail(item: any) {
         if (this.isCartClicked) {
             this.isCartClicked = false;
             return;
         }
-        alert('detail ' + item.name);
+        const navigate = this.router.navigate(['/detail', item]);
     }
 
     addToCart(item: any) {

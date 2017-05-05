@@ -65,15 +65,15 @@
 }
 
 ul.category {
-    left: 70px;
+    left: calc(50% - 180px);
 }
 
 ul.recommend {
-    left: 200px;
+    left: calc(50% - 50px);
 }
 
 ul.ordermanagement {
-    left: 400px;
+    left: calc(50% + 150px);
 }
 
 ul {

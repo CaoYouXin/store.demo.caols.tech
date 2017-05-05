@@ -1,0 +1,68 @@
+.wrapper {
+    position: fixed;
+    z-index: 1000;
+
+    left: calc(50% - 250px);
+    right: calc(50% - 250px);
+    bottom: 0;
+
+    height: 50px;
+
+    background-color: white;
+    border-top: solid 1px #dddddd;
+}
+
+.wrapper > * {
+    float: left;
+}
+
+.customer-service {
+    width: 50px;
+    height: 100%;
+
+    background: url("../../assets/Customer_Service.png") no-repeat center;
+    background-size: 60%;
+
+    border-right: solid 1px #DDDDDD;
+}
+
+.shopping-cart {
+    width: 50px;
+    height: 100%;
+
+    background: url("../../assets/shopping_cart.png") no-repeat center;
+    background-size: 60%;
+}
+
+.btns {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    cursor: default;
+}
+
+.btns > .btn {
+    flex-grow: 1;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 50px;
+    cursor: default;
+}
+
+.btns > .btn:nth-child(1) {
+    background-color: indianred;
+}
+
+.btns > .btn:nth-child(2) {
+    background-color: red;
+}
+
+.btns > .btn:hover, .btns > .btn:focus {
+    background-color: darkred;
+}
+
+@media screen and (min-width: 520px) {
+    .wrapper {
+        bottom: calc(240px / 1489 * 500);
+    }
+}

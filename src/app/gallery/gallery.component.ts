@@ -36,6 +36,9 @@ export class GalleryComponent implements OnInit {
     @Input()
     auto: boolean;
 
+    @Input()
+    height: string;
+
     constructor(private sanitizer: DomSanitizer) {
     }
 

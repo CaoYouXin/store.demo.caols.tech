@@ -11,4 +11,7 @@ export class MenuComponent {
     recommend = false;
     ordermanagement = false;
 
+    goToCategory() {
+        const navigate = this.router.navigate(['/category']);
+    }
 }

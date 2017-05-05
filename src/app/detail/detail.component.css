@@ -1,0 +1,73 @@
+.info {
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #DDDDDD;
+}
+
+p.name {
+    line-height: 1.5em;
+    padding: 0 1%;
+}
+
+span.price {
+    color: indianred;
+}
+
+span.price:before {
+    content: '￥';
+}
+
+.choose-style {
+    border-top: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DDDDDD;
+    padding: 0 1%;
+    margin: 15px 0;
+    overflow: hidden;
+    background-color: white;
+    cursor: default;
+}
+
+.choose-style > p {
+    padding: 10px 0;
+}
+
+.choose-style > p:first-child {
+    float: left;
+}
+
+.choose-style > p:last-child {
+    float: right;
+}
+
+.btns {
+    display: flex;
+    cursor: default;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.btns > .btn {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btns > .btn.active {
+    border-bottom: solid 1px #333333;
+}
+
+.goods-detail {
+    background-color: white;
+    width: 100%;
+}
+
+.goods-comments {
+    background-color: white;
+    width: 100%;
+}
+
+.none-comment {
+    text-align: center;
+    padding: 10px 0;
+}

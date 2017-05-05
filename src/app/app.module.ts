@@ -13,6 +13,9 @@ import {GoodsList2ColsComponent} from "./goodslist/twocols/component";
 import {FooterComponent} from "./footer/footer.component";
 import {MenuComponent} from "./menu/menu.component";
 import {Add2CartComponent} from "./add2cart/add2cart.component";
+import {DetailComponent} from "./detail/detail.component";
+import {CtrlMenuComponent} from "./ctrlmenu/ctrlmenu.component";
+import {CategoryComponent} from "./category/category.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = <any>{
@@ -30,7 +33,10 @@ export class MyHammerConfig extends HammerGestureConfig {
         SearchComponent,
         GoodsList1ColComponent,
         GoodsList2ColsComponent,
-        FooterComponent
+        FooterComponent,
+        DetailComponent,
+        CtrlMenuComponent,
+        CategoryComponent
     ],
     imports: [
         BrowserModule,
