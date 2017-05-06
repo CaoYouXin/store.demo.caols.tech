@@ -1,0 +1,39 @@
+<div class="wrapper names" [style.height]="categoryHeight">
+    <div (panmove)="namesPanMove($event)"
+         (panend)="namesPanEnd($event)"
+         (panstart)="namesPanStart()"
+         [style.transform]="namesLoc">
+        <div class="name" *ngFor="let name of names;let idx = index"
+            [class.selected]="selectedName === idx"
+            (click)="userSelectName(idx)">{{name}}</div>
+    </div>
+</div>
+
+<div class="wrapper items" [style.height]="categoryHeight">
+    <div class="item-text"
+        [style.transform]="selectedNameLoc">{{names[selectedName]}}</div>
+    <div (panmove)="itemsPanMove($event)"
+         (panend)="itemsPanEnd($event)"
+         (panstart)="itemsPanStart()"
+         [style.transform]="itemsLoc">
+        <div *ngFor="let item of items">
+            <div class="item-text" *ngIf="item.isText">{{item.text}}</div>
+            <div class="item" *ngIf="!item.isText" (click)="goToDetail(item)">
+                <div class="cover"
+                    [style.backgroundImage]="item.image"></div>
+                <div class="info">
+                    <p class="name">{{item.name}}</p>
+                    <span class="price">{{item.price}}</span>
+                </div>
+                <div class="buy" (click)="add2cartClicked(item)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+<app-menu></app-menu>
+<app-add2cart [show]="showAdd2Cart | async"
+              [bgImage]="add2CartBgImage"
+              [name]="add2CartName"
+              [price]="add2CartPrice"></app-add2cart>

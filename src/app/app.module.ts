@@ -18,8 +18,9 @@ import {CtrlMenuComponent} from "./ctrlmenu/ctrlmenu.component";
 import {CategoryComponent} from "./category/category.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
-    overrides = <any>{
-        'swipe': {velocity: 0.4, threshold: 20} // override default settings
+    overrides = {
+        'swipe': {velocity: 0.4, threshold: 20}, // override default settings
+        'pan': {threshold: 0}
     };
 }
 
