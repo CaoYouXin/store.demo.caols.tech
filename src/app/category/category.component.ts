@@ -156,26 +156,12 @@ export class CategoryComponent implements OnInit {
                 this.namesLoc = 'translateY(' + num + 'px)';
             }
         }
+
+        return num;
     }
 
     namesPanEnd(e) {
-        let num = this.numNamesLoc + e.deltaY;
-
-        if (document.body.scrollTop > 0 && num > this.minNamesHeight) {
-            this.numNamesOffset = num - this.minNamesHeight;
-            document.body.scrollTop = this.scrollTop - this.numNamesOffset;
-            this.namesLoc = 'translateY(' + (num = this.minNamesHeight) + 'px)';
-        } else {
-            if (num < this.minNamesHeight) {
-                document.body.scrollTop = this.scrollTop + this.minNamesHeight - num;
-                this.namesLoc = 'translateY(' + (num = this.minNamesHeight) + 'px)';
-            } else {
-                num = Math.min(0, Math.max(num - this.numNamesOffset, this.minNamesHeight));
-                this.namesLoc = 'translateY(' + num + 'px)';
-            }
-        }
-
-        this.numNamesLoc = num;
+        this.numNamesLoc = this.namesPanMove(e);
     }
 
     itemsPanStart() {
@@ -201,27 +187,12 @@ export class CategoryComponent implements OnInit {
         }
 
         this.autoSelectName(Math.abs(num));
+
+        return num;
     }
 
     itemsPanEnd(e) {
-        let num = this.numItemsLoc + e.deltaY;
-
-        if (document.body.scrollTop > 0 && num > this.minItemsHeight) {
-            this.numItemsOffset = num - this.minItemsHeight;
-            document.body.scrollTop = this.scrollTop - this.numItemsOffset;
-            this.itemsLoc = 'translateY(' + (num = this.minItemsHeight) + 'px)';
-        } else {
-            if (num < this.minItemsHeight) {
-                document.body.scrollTop = this.scrollTop + this.minItemsHeight - num;
-                this.itemsLoc = 'translateY(' + (num = this.minItemsHeight) + 'px)';
-            } else {
-                num = Math.min(0, Math.max(num - this.numItemsOffset, this.minItemsHeight));
-                this.itemsLoc = 'translateY(' + num + 'px)';
-            }
-        }
-
-        this.autoSelectName(Math.abs(num));
-        this.numItemsLoc = num;
+        this.numItemsLoc = this.itemsPanMove(e);
     }
 
     add2cartClicked(item) {
