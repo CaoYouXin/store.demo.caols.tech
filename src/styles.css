@@ -30,7 +30,7 @@ body {
         left: calc(50% - 250px - 10px);
         right: calc(50% - 250px - 10px);
 
-        background: white url("./assets/phone-top.png");
+        background: ivory url("./assets/phone-top.png");
         background-size: 100%;
     }
 
@@ -58,7 +58,7 @@ body {
         left: calc(50% - 250px - 10px);
         right: calc(50% - 250px - 10px);
 
-        background: white url("./assets/phone-bottom.png");
+        background: ivory url("./assets/phone-bottom.png");
         background-size: 100%;
     }
 

@@ -14,6 +14,7 @@ export class CategoryComponent implements OnInit {
     private numItemsOffset: number;
     private scrollTop: number;
     private isCartClicked: boolean;
+    private isPan: boolean;
 
     private itemValues = [];
     private numCategoryHeight = window.innerWidth > 520
@@ -128,6 +129,11 @@ export class CategoryComponent implements OnInit {
     }
 
     userSelectName(idx: number) {
+        if (this.isPan) {
+            this.isPan = false;
+            return;
+        }
+
         let num = 0 - this.itemValues[idx][0];
         num = Math.min(0, Math.max(num, this.minItemsHeight));
         this.itemsLoc = 'translateY(' + num + 'px)';
@@ -136,6 +142,7 @@ export class CategoryComponent implements OnInit {
     }
 
     namesPanStart() {
+        this.isPan = true;
         this.scrollTop = document.body.scrollTop;
         this.numNamesOffset = 0;
     }
@@ -165,6 +172,7 @@ export class CategoryComponent implements OnInit {
     }
 
     itemsPanStart() {
+        this.isPan = true;
         this.scrollTop = document.body.scrollTop;
         this.numItemsOffset = 0;
     }
@@ -196,6 +204,11 @@ export class CategoryComponent implements OnInit {
     }
 
     add2cartClicked(item) {
+        if (this.isPan) {
+            this.isPan = false;
+            return;
+        }
+
         this.isCartClicked = true;
         this.add2CartBgImage = item.image;
         this.add2CartName = item.name;
@@ -204,6 +217,11 @@ export class CategoryComponent implements OnInit {
     }
 
     goToDetail(item: any) {
+        if (this.isPan) {
+            this.isPan = false;
+            return;
+        }
+
         if (this.isCartClicked) {
             this.isCartClicked = false;
             return;

@@ -18,6 +18,8 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+
+    cursor: default;
 }
 
 .wrapper.names .name.selected {
