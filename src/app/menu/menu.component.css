@@ -1,15 +1,7 @@
 .wrapper {
-    position: fixed;
     z-index: 1000;
 
-    left: calc(50% - 250px);
-    right: calc(50% - 250px);
-    bottom: 0;
-
     height: 50px;
-
-    background-color: white;
-    border-top: solid 1px #dddddd;
 }
 
 .wrapper > .btn {
@@ -139,10 +131,6 @@ ul:after {
 }
 
 @media screen and (min-width: 520px) {
-    .wrapper {
-        bottom: calc(240px / 1489 * 500);
-    }
-
     ul {
         bottom: calc(240px / 1489 * 500 + 60px);
     }

@@ -15,9 +15,51 @@ body {
     background-color: ivory;
 }
 
+.bottom-box {
+    position: fixed;
+
+    left: calc(50% - 250px);
+    right: calc(50% - 250px);
+    bottom: 0;
+
+    background-color: white;
+    border-top: solid 1px #dddddd;
+
+    transition: transform 1s ease-in-out;
+}
+
+.bottom-box.hide {
+    transform: translateY(100%);
+}
+
+.bottom-box.show {
+    transform: translateY(0);
+}
+
+.fancy-box.center {
+    text-align: center;
+}
+
+.fancy-box:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.fancy-box > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 @media screen and (min-width: 520px) {
     body {
         padding: calc(175px / 1489 * 500) 0 calc(240px / 1489 * 500);
+    }
+
+    .bottom-box {
+        bottom: calc(240px / 1489 * 500);
     }
 
     #phone-top {

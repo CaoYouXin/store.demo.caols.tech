@@ -18,6 +18,7 @@ import {CtrlMenuComponent} from "./ctrlmenu/ctrlmenu.component";
 import {CategoryComponent} from "./category/category.component";
 import {OrderComponent} from "./order/order.component";
 import {OrderMenuComponent} from "./ordermenu/ordermenu.component";
+import {DiscountComponent} from "./discount/discount.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = {
@@ -41,7 +42,8 @@ export class MyHammerConfig extends HammerGestureConfig {
         CtrlMenuComponent,
         CategoryComponent,
         OrderComponent,
-        OrderMenuComponent
+        OrderMenuComponent,
+        DiscountComponent
     ],
     imports: [
         BrowserModule,

@@ -1,22 +1,7 @@
 .wrapper {
-    position: fixed;
     z-index: 2000;
 
-    left: calc(50% - 250px);
-    right: calc(50% - 250px);
-    bottom: 0;
-
     height: auto;
-
-    background-color: white;
-    border-top: solid 1px #dddddd;
-
-    transform: translateY(100%);
-    transition: transform 1s ease-in-out;
-}
-
-.wrapper.show {
-    transform: translateY(0);
 }
 
 .blur {
@@ -183,10 +168,4 @@ hr {
 
 .btns > .btn:hover, .btns > .btn:focus {
     background-color: darkred;
-}
-
-@media screen and (min-width: 520px) {
-    .wrapper {
-        bottom: calc(240px / 1489 * 500);
-    }
 }

@@ -1,0 +1,17 @@
+.wrapper {
+    z-index: 2000;
+
+    height: auto;
+}
+
+.blur {
+    position: fixed;
+    z-index: 1999;
+
+    left: calc(50% - 250px);
+    right: calc(50% - 250px);
+    bottom: 0;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}

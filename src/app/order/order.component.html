@@ -1,4 +1,12 @@
-<div class="address"></div>
+<div class="address">
+    <div></div>
+    <div class="wrapper">
+        <span class="name">{{addressName}}</span>
+        <span class="phone">{{addressPhone}}</span>
+        <p>{{addressDetail}}</p>
+    </div>
+    <div>></div>
+</div>
 <div></div>
 
 <ul class="goodslist">
@@ -18,12 +26,12 @@
         <span>给卖家留言: </span>
         <textarea [(ngModel)]="message" placeholder="需要注意的事项"
             (focus)="messageFocused=true" (blur)="messageFocused=false"
-            [class.focused]="messageFocused" autofocus="false"></textarea>
+            [class.focused]="messageFocused"></textarea>
     </li>
     <li class="amount"><span>小计:&nbsp;</span><span class="price">{{amount}}</span></li>
 </ul>
 
-<div class="discount">
+<div class="discount" (click)="showDiscount()">
     <span>使用优惠: </span>
     <p> <span class="price">{{discount}}</span> > </p>
 </div>
@@ -31,3 +39,4 @@
 <app-footer></app-footer>
 <app-ordermenu (btnClick)="alert('订单提交啦！！！');"
     [total]="totalAmount"></app-ordermenu>
+<app-discount [show]="isDiscountShow | async"></app-discount>
