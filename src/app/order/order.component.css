@@ -24,6 +24,7 @@
 
 .wrapper > span.name:before {
     content: '收货人: ';
+    font-size: 1.1em;
 }
 
 .wrapper > span.phone {
@@ -162,14 +163,6 @@
 
 .amount, .freight {
     text-align: right;
-}
-
-span.price {
-    color: indianred;
-}
-
-span.price:before {
-    content: '￥';
 }
 
 .discount {

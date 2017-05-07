@@ -1,4 +1,4 @@
-<div class="address">
+<div class="address" (click)="showAddress()">
     <div></div>
     <div class="wrapper">
         <span class="name">{{addressName}}</span>
@@ -37,6 +37,5 @@
 </div>
 
 <app-footer></app-footer>
-<app-ordermenu (btnClick)="alert('订单提交啦！！！');"
-    [total]="totalAmount"></app-ordermenu>
-<app-discount [show]="isDiscountShow | async"></app-discount>
+<app-ordermenu (btnClick)="createOrder()" [total]="totalAmount"></app-ordermenu>
+<app-discount (btnClick)="refreshDiscount($event)" [show]="isDiscountShow | async"></app-discount>

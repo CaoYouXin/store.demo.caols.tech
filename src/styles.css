@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    font-family: Monaco, "Droid Sans", "Microsoft YaHei", monospace;
 }
 
 .center {
@@ -51,6 +52,14 @@ body {
 .fancy-box > * {
     display: inline-block;
     vertical-align: middle;
+}
+
+span.price {
+    color: indianred;
+}
+
+span.price:before {
+    content: '￥';
 }
 
 @media screen and (min-width: 520px) {

@@ -15,3 +15,39 @@
 
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+.wrapper > p {
+    text-align: center;
+}
+
+.wrapper > input, .wrapper > .btn {
+    float: left;
+    border-radius: 5px;
+}
+
+.wrapper > input {
+    width: 360px;
+    outline: none;
+    border: solid 1px #DDDDDD;
+    line-height: 30px;
+    height: 30px;
+    margin: 10px 0 20px 20px;
+}
+
+.wrapper > input:focus {
+    box-shadow: 0 0 5px blue;
+}
+
+.wrapper > .btn {
+    cursor: default;
+    color: white;
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    background-color: indianred;
+}
+
+.wrapper > .btn:hover, .wrapper > .btn:focus {
+    background-color: darkred;
+}

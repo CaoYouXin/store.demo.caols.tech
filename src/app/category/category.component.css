@@ -78,14 +78,6 @@
     text-overflow: ellipsis;
 }
 
-.info > .price {
-    color: indianred;
-}
-
-.info > .price:before {
-    content: '￥';
-}
-
 .item > .buy {
     width: 40px;
     height: 90px;

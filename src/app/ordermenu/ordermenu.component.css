@@ -32,14 +32,6 @@
     vertical-align: middle;
 }
 
-span.price {
-    color: indianred;
-}
-
-span.price:before {
-    content: '￥';
-}
-
 .wrapper > .btn {
     float: left;
     position: relative;

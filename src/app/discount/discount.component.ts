@@ -1,4 +1,4 @@
-import {Component, Input} from "@angular/core";
+import {Component, EventEmitter, Input, Output} from "@angular/core";
 
 @Component({
     selector: 'app-discount',
@@ -9,4 +9,12 @@ export class DiscountComponent {
 
     @Input()
     show: boolean;
+
+    @Output()
+    btnClick = new EventEmitter();
+
+    btnClicked() {
+        this.btnClick.emit(Math.random() * 5);
+        this.show = false;
+    }
 }

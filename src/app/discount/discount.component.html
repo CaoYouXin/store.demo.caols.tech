@@ -1,7 +1,7 @@
 <div class="bottom-box wrapper" [class.show]="show" [class.hide]="!show">
     <p>输入优惠码: </p>
     <input type="text" placeholder="优惠码">
-    <div class="btn">兑换</div>
+    <div class="btn" (click)="btnClicked()">兑换</div>
 </div>
 
 <div class="blur" *ngIf="show" (click)="show=false"></div>

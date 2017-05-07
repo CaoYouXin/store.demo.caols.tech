@@ -10,14 +10,6 @@ p.name {
     padding: 0 1%;
 }
 
-span.price {
-    color: indianred;
-}
-
-span.price:before {
-    content: '￥';
-}
-
 .info > hr {
     width: 99%;
     height: 1px;
