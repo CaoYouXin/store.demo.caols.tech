@@ -1,0 +1,33 @@
+<div class="address"></div>
+<div></div>
+
+<ul class="goodslist">
+    <li *ngFor="let goods of goodslist">
+        <div class="cover" [style.backgroundImage]="goods.bgImage"></div>
+        <div class="info">
+            <p class="name">{{goods.name}}</p>
+            <span class="price">{{goods.price}}</span>
+        </div>
+        <div class="count">{{goods.count}}</div>
+    </li>
+</ul>
+
+<ul class="misc">
+    <li class="freight"><span>运费:&nbsp;</span><span class="price">{{freight}}</span></li>
+    <li class="message" [class.focused]="messageFocused">
+        <span>给卖家留言: </span>
+        <textarea [(ngModel)]="message" placeholder="需要注意的事项"
+            (focus)="messageFocused=true" (blur)="messageFocused=false"
+            [class.focused]="messageFocused" autofocus="false"></textarea>
+    </li>
+    <li class="amount"><span>小计:&nbsp;</span><span class="price">{{amount}}</span></li>
+</ul>
+
+<div class="discount">
+    <span>使用优惠: </span>
+    <p> <span class="price">{{discount}}</span> > </p>
+</div>
+
+<app-footer></app-footer>
+<app-ordermenu (btnClick)="alert('订单提交啦！！！');"
+    [total]="totalAmount"></app-ordermenu>

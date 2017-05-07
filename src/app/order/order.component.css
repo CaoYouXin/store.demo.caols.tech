@@ -1,0 +1,148 @@
+.address {
+    width: 100%;
+    height: 100px;
+
+    background-color: white;
+}
+
+.address + div {
+    width: 100%;
+    height: 3px;
+
+    background: url("../../assets/line.png") repeat-x;
+}
+
+.goodslist {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.goodslist > li:first-child {
+    border-top: solid 1px #DDDDDD;
+}
+
+.goodslist > li {
+    width: 100%;
+    height: 100px;
+
+    background-color: white;
+    border-bottom: solid 1px #DDDDDD;
+}
+
+.goodslist > li > * {
+    float: left;
+}
+
+.goodslist .cover {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-size: contain;
+}
+
+.goodslist .info {
+    width: 350px;
+    margin-right: 14px;
+    margin-top: 20px;
+}
+
+.info > .name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.goodslist .count {
+    width: 36px;
+    height: 98px;
+    line-height: 98px;
+}
+
+.goodslist .count:before {
+    content: 'x';
+}
+
+.misc {
+    list-style: none;
+    background-color: white;
+}
+
+.misc > li {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    border-bottom: solid 1px #DDDDDD;
+}
+
+.misc > li:after, .discount:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+
+.misc > li > *, .discount > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.message {
+    transition: height 1s;
+}
+
+.misc > li.message.focused {
+    height: 100px;
+}
+
+.message > span {
+    width: 100px;
+}
+
+.message > textarea {
+    outline: none;
+    resize: none;
+    background-color: transparent;
+
+    width: 360px;
+    height: 30px;
+    line-height: 30px;
+
+    transition: height 1s;
+}
+
+.message.focused > textarea {
+    height: 80px;
+    line-height: 20px;
+}
+
+.amount, .freight {
+    text-align: right;
+}
+
+span.price {
+    color: indianred;
+}
+
+span.price:before {
+    content: '￥';
+}
+
+.discount {
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-top: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DDDDDD;
+}
+
+.discount > span {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.discount > p {
+    width: 380px;
+    text-align: right;
+}

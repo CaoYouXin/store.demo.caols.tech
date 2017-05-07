@@ -14,6 +14,8 @@ export class DetailComponent implements OnInit {
     showGoodsDetail = true;
     showCommentsLevel = 0;
     comments = [];
+    freight = '20.00';
+    sales = 6;
 
     bgImage: string;
     name: string;

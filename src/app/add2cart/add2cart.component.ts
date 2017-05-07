@@ -1,4 +1,5 @@
 import {Component, Input, OnChanges} from "@angular/core";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-add2cart',
@@ -22,6 +23,8 @@ export class Add2CartComponent {
     count = 1;
     styles = ['style0', 'style1', 'style2', 'style1', 'style2', 'style1', 'style2', 'style1', 'style2', 'style1', 'style2'];
 
+    constructor(private router: Router) {}
+
     countChange(newCount) {
         try {
             newCount = window['parseInt'](newCount);
@@ -41,5 +44,15 @@ export class Add2CartComponent {
             return;
         }
         this.count -= 1;
+    }
+
+    goToOrder() {
+        window.localStorage.setItem('order', JSON.stringify([{
+            bgImage: this.bgImage,
+            name: this.name,
+            price: this.price,
+            count: this.count
+        }]));
+        const navigate = this.router.navigate(['/order']);
     }
 }

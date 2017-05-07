@@ -18,6 +18,25 @@ span.price:before {
     content: '￥';
 }
 
+.info > hr {
+    width: 99%;
+    height: 1px;
+    margin: 10px 0 10px 1%;
+    background-color: #DDDDDD;
+}
+
+.info > hr + * {
+    margin-left: 1%;
+}
+
+span.sales {
+    margin-left: 30px;
+}
+
+span.sales:before {
+    content: '销量: ';
+}
+
 .choose-style {
     border-top: solid 1px #DDDDDD;
     border-bottom: solid 1px #DDDDDD;
