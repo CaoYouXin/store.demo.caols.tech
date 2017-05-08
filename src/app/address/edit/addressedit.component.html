@@ -1,0 +1,41 @@
+<div class="bottom-box wrapper" [class.show]="show" [class.hide]="!show">
+    <ul>
+        <li class="name">
+            <span>收货人</span>
+            <input type="text" [(ngModel)]="name" placeholder="姓名">
+        </li>
+        <li class="phone">
+            <span>联系电话</span>
+            <input type="text" [(ngModel)]="phone" placeholder="手机或者固定电话">
+        </li>
+        <li class="region">
+            <span>选择区域</span>
+            <div class="province" (click)="selectProvince()">
+                <input type="text" [(ngModel)]="province" disabled placeholder="省份">
+                <span>▽</span>
+            </div>
+            <div class="city" (click)="selectCity()">
+                <input type="text" [(ngModel)]="city" disabled placeholder="城市">
+                <span>▽</span>
+            </div>
+            <div class="strict" (click)="selectStrict()">
+                <input type="text" [(ngModel)]="strict" disabled placeholder="街道">
+                <span>▽</span>
+            </div>
+        </li>
+        <li class="address">
+            <span>详细住址</span>
+            <textarea [(ngModel)]="address" placeholder="例如: 门牌号"></textarea>
+        </li>
+        <li class="zipcode">
+            <span>邮政编码</span>
+            <input type="text" [(ngModel)]="zipcode" placeholder="可选">
+        </li>
+    </ul>
+    <div class="btn primary" (click)="save()">保存地址</div>
+    <div class="btn second" *ngIf="editMode" (click)="delete()">删除地址</div>
+</div>
+
+<div class="blur" *ngIf="show" (click)="show=false"></div>
+
+<app-combo [show]="isComboShow | async" [data]="comboData" (btnClick)="select($event)"></app-combo>

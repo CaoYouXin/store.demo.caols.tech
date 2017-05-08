@@ -1,0 +1,27 @@
+.wrapper {
+    z-index: 4000;
+
+    height: auto;
+}
+
+.blur {
+    position: fixed;
+    z-index: 3999;
+
+    left: calc(50% - 250px);
+    right: calc(50% - 250px);
+    bottom: 0;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item {
+    padding: 10px;
+    text-align: center;
+    cursor: default;
+}
+
+.item + .item {
+    border-top: solid 1px #DDDDDD;
+}

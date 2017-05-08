@@ -1,9 +1,14 @@
 <div class="address" (click)="showAddress()">
     <div></div>
-    <div class="wrapper">
-        <span class="name">{{addressName}}</span>
-        <span class="phone">{{addressPhone}}</span>
-        <p>{{addressDetail}}</p>
+    <div class="center fancy-box wrapper" *ngIf="addresses.length === 0">
+        添加新地址
+    </div>
+    <div class="wrapper" *ngIf="addresses.length > 0">
+        <span class="name">{{addresses[addressIdx].name}}</span>
+        <span class="phone">{{addresses[addressIdx].phone}}</span>
+        <p>{{addresses[addressIdx].province + addresses[addressIdx].city +
+            addresses[addressIdx].strict + addresses[addressIdx].address}}
+            ({{addresses[addressIdx].zipcode}})</p>
     </div>
     <div>></div>
 </div>
@@ -39,3 +44,5 @@
 <app-footer></app-footer>
 <app-ordermenu (btnClick)="createOrder()" [total]="totalAmount"></app-ordermenu>
 <app-discount (btnClick)="refreshDiscount($event)" [show]="isDiscountShow | async"></app-discount>
+<app-address-editor [show]="isAddressEditorShow | async" [editMode]="isAddressEditMode"
+    (saveBtnClick)="addressSaved($event)" (deleteBtnClick)="addressDeleted()"></app-address-editor>

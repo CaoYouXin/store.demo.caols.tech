@@ -19,6 +19,8 @@ import {CategoryComponent} from "./category/category.component";
 import {OrderComponent} from "./order/order.component";
 import {OrderMenuComponent} from "./ordermenu/ordermenu.component";
 import {DiscountComponent} from "./discount/discount.component";
+import {AddressEditComponent} from "./address/edit/addressedit.component";
+import {ComboComponent} from "./combo/combo.component";
 
 export class MyHammerConfig extends HammerGestureConfig {
     overrides = {
@@ -43,7 +45,9 @@ export class MyHammerConfig extends HammerGestureConfig {
         CategoryComponent,
         OrderComponent,
         OrderMenuComponent,
-        DiscountComponent
+        DiscountComponent,
+        AddressEditComponent,
+        ComboComponent
     ],
     imports: [
         BrowserModule,

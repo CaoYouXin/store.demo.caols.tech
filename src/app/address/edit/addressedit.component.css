@@ -1,0 +1,108 @@
+.wrapper {
+    z-index: 3000;
+
+    height: auto;
+    overflow: hidden;
+}
+
+.blur {
+    position: fixed;
+    z-index: 2999;
+
+    left: calc(50% - 250px);
+    right: calc(50% - 250px);
+    bottom: 0;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    height: auto;
+    overflow: hidden;
+}
+
+li + li {
+    border-top: solid 1px #DDDDDD;
+}
+
+input {
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    width: 340px;
+    line-height: 25px;
+}
+
+textarea {
+    display: inline-block;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    width: 340px;
+    line-height: 25px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px blue;
+}
+
+li > span {
+    display: inline-block;
+    width: 100px;
+    line-height: 25px;
+    margin: 10px 20px;
+}
+
+.region input {
+    width: 5em;
+}
+
+.region input:focus {
+    box-shadow: none;
+}
+
+.region > div {
+    display: inline-block;
+    border-radius: 5px;
+    border: solid 1px blueviolet;
+    cursor: default;
+}
+
+.btn {
+    border-radius: 5px;
+    border: solid 1px #DDDDDD;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    cursor: default;
+}
+
+.btn + .btn {
+    margin-top: 0;
+}
+
+.btn.primary {
+    color: white;
+    background-color: green;
+}
+
+.btn.primary:hover, .btn.primary:focus {
+    background-color: darkgreen;
+}
+
+.btn.second {
+    color: black;
+    background-color: lightcyan;
+}
+
+.btn.second:hover, .btn.second:focus {
+    background-color: cyan;
+}
