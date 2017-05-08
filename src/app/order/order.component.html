@@ -45,4 +45,5 @@
 <app-ordermenu (btnClick)="createOrder()" [total]="totalAmount"></app-ordermenu>
 <app-discount (btnClick)="refreshDiscount($event)" [show]="isDiscountShow | async"></app-discount>
 <app-address-editor [show]="isAddressEditorShow | async" [editMode]="isAddressEditMode"
-    (saveBtnClick)="addressSaved($event)" (deleteBtnClick)="addressDeleted()"></app-address-editor>
+    (saveBtnClick)="refreshAddress($event)"></app-address-editor>
+<app-address-list [show]="isAddressListShow | async" (selectBtnClick)="refreshAddress($event)"></app-address-list>

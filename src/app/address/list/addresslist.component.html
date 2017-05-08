@@ -1,0 +1,21 @@
+<div class="bottom-box wrapper" [class.show]="show" [class.hide]="!show">
+    <div *ngFor="let address of addresses" (click)="selectAddress(address.id)">
+        <div class="address" *ngIf="!address.deleted">
+            <div></div>
+            <div class="wrapper">
+                <span class="name">{{address.name}}</span>
+                <span class="phone">{{address.phone}}</span>
+                <p>{{address.province + address.city +
+                    address.strict + address.address}}
+                    ({{address.zipcode}})</p>
+            </div>
+            <div (click)="showAddressEditor(address.id)">编辑</div>
+        </div>
+    </div>
+    <div class="btn second" (click)="showAddressEditor()">新增地址</div>
+</div>
+
+<div class="blur" *ngIf="show" (click)="show=false"></div>
+
+<app-address-editor [show]="isAddressEditorShow | async" [editMode]="isAddressEditMode" [id]="addressId"
+                    (saveBtnClick)="refreshAddress()" (deleteBtnClick)="refreshAddress()"></app-address-editor>

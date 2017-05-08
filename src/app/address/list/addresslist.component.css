@@ -1,0 +1,99 @@
+.wrapper {
+    z-index: 2000;
+
+    height: auto;
+}
+
+.blur {
+    position: fixed;
+    z-index: 1999;
+
+    left: calc(50% - 250px);
+    right: calc(50% - 250px);
+    bottom: 0;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper > div + div {
+    border-top: solid 1px #DDDDDD;
+}
+
+.address {
+    width: 100%;
+    height: 100px;
+
+    cursor: default;
+
+    background-color: white;
+}
+
+.address > * {
+    float: left;
+}
+
+.address > .wrapper {
+    width: 430px;
+    height: 3.7em;
+    margin-top: 20px;
+}
+
+.wrapper > span {
+    display: inline-block;
+}
+
+.wrapper > span.name {
+    width: 200px;
+}
+
+.wrapper > span.name:before {
+    content: '收货人: ';
+    font-size: 1.1em;
+}
+
+.wrapper > span.phone {
+    width: 200px;
+    text-align: right;
+}
+
+.wrapper > p {
+    line-height: 1.3em;
+    height: 2.6em;
+    overflow: hidden;
+}
+
+.address > *:first-child {
+    width: 30px;
+    margin-top: 20px;
+    height: 80px;
+    background: url("../../../assets/location.png") no-repeat top;
+    background-size: 80%;
+}
+
+.address > *:last-child {
+    line-height: 100px;
+    background-color: lightcyan;
+}
+
+.address > *:last-child:hover, .address > *:last-child:focus {
+    background-color: cyan;
+}
+
+.btn {
+    border-radius: 5px;
+    border: solid 1px #DDDDDD;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    cursor: default;
+}
+
+.btn.second {
+    color: black;
+    background-color: lightcyan;
+}
+
+.btn.second:hover, .btn.second:focus {
+    background-color: cyan;
+}

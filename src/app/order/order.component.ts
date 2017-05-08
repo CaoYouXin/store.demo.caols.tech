@@ -48,14 +48,9 @@ export class OrderComponent implements OnInit {
         const navigate = this.router.navigate(['/']);
     }
 
-    addressSaved(e) {
+    refreshAddress(e) {
         this.addresses = JSON.parse(localStorage.getItem('addresses') || '[]');
         this.addressIdx = e;
-    }
-
-    addressDeleted() {
-        this.addresses = JSON.parse(localStorage.getItem('addresses') || '[]');
-        this.addressIdx = this.addresses.length - 1;
     }
 
     showAddress() {

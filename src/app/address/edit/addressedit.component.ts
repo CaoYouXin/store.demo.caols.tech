@@ -1,11 +1,11 @@
-import {Component, EventEmitter, Input, OnInit, Output} from "@angular/core";
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output} from "@angular/core";
 
 @Component({
     selector: 'app-address-editor',
     templateUrl: './addressedit.component.html',
     styleUrls: ['./addressedit.component.css']
 })
-export class AddressEditComponent implements OnInit {
+export class AddressEditComponent implements OnChanges {
 
     @Input()
     show: boolean;
@@ -35,7 +35,11 @@ export class AddressEditComponent implements OnInit {
 
     isComboShow = new Promise(res => res(false));
 
-    ngOnInit() {
+    ngOnChanges(cr) {
+        if (!cr.show) {
+            return;
+        }
+
         const addresses = JSON.parse(localStorage.getItem('addresses') || '[]');
         if (!this.editMode) {
             if (addresses.length === 0) {
@@ -109,20 +113,8 @@ export class AddressEditComponent implements OnInit {
     }
 
     delete() {
-        const self = this;
         const addresses = JSON.parse(localStorage.getItem('addresses') || '[]');
-        const idx = addresses.reduce((p, v, i) => {
-            if (null !== p) {
-                return p;
-            }
-
-            if (v.id === self.id) {
-                return i;
-            }
-
-            return null;
-        }, null);
-        delete addresses[idx];
+        addresses[this.id].deleted = true;
         localStorage.setItem('addresses', JSON.stringify(addresses));
         this.show = false;
         this.deleteBtnClick.emit();
