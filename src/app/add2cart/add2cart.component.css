@@ -52,7 +52,7 @@
     float: right;
     width: 40px;
     height: 40px;
-    background: url("../../assets/close.png") no-repeat center;
+    background: url("assets/close.png") no-repeat center;
     background-size: contain;
 }
 

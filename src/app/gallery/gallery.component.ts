@@ -23,13 +23,13 @@ export class GalleryComponent implements OnInit {
     animation = true;
     items: Array<any> = [];
     _items = [{
-        src: 'url("../../assets/goods1.png")'
+        src: 'url("assets/goods1.png")'
     }, {
-        src: 'url("../../assets/goods2.png")'
+        src: 'url("assets/goods2.png")'
     }, {
-        src: 'url("../../assets/goods1.png")'
+        src: 'url("assets/goods1.png")'
     }, {
-        src: 'url("../../assets/goods2.png")'
+        src: 'url("assets/goods2.png")'
     }];
     activeIndex = 0;
 

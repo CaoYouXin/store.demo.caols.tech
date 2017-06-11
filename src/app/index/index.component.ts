@@ -10,7 +10,7 @@ export class IndexComponent {
 
     galleryHeight = '300px';
     showAdd2Cart = new Promise(res => res(false));
-    add2CartBgImage = 'url("../../assets/goods2.png")';
+    add2CartBgImage = 'url("assets/goods2.png")';
     add2CartName = 'name name name name name name name name name name name name';
     add2CartPrice = '20.00';
 

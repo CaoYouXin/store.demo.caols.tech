@@ -45,7 +45,7 @@
     width: 30px;
     margin-top: 20px;
     height: 80px;
-    background: url("../../assets/location.png") no-repeat top;
+    background: url("assets/location.png") no-repeat top;
     background-size: 80%;
 }
 
@@ -57,7 +57,7 @@
     width: 100%;
     height: 3px;
 
-    background: url("../../assets/line.png") repeat-x;
+    background: url("assets/line.png") repeat-x;
 }
 
 .goodslist {

@@ -33,60 +33,60 @@ var CategoryComponent = (function () {
         this.itemsLoc = 'translateY(' + this.numItemsLoc + ')';
         this.selectedNameLoc = 'translateY(' + this.numSelectedNameLoc + ')';
         this.showAdd2Cart = new Promise(function (res) { return res(false); });
-        this.add2CartBgImage = 'url("../../assets/goods2.png")';
+        this.add2CartBgImage = 'url("assets/goods2.png")';
         this.add2CartName = 'name name name name name name name name name name name name';
         this.add2CartPrice = '20.00';
     }
     CategoryComponent.prototype.ngOnInit = function () {
         var data = {
             "分类": [{
-                    image: 'url("../../assets/goods1.png")',
+                    image: 'url("assets/goods1.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods2.png")',
+                    image: 'url("assets/goods2.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }],
             "分类分类": [{
-                    image: 'url("../../assets/goods1.png")',
+                    image: 'url("assets/goods1.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods2.png")',
+                    image: 'url("assets/goods2.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods1.png")',
+                    image: 'url("assets/goods1.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods2.png")',
+                    image: 'url("assets/goods2.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }],
             "分类分类分类分类": [{
-                    image: 'url("../../assets/goods1.png")',
+                    image: 'url("assets/goods1.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods2.png")',
+                    image: 'url("assets/goods2.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods1.png")',
+                    image: 'url("assets/goods1.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods2.png")',
+                    image: 'url("assets/goods2.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods1.png")',
+                    image: 'url("assets/goods1.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }, {
-                    image: 'url("../../assets/goods2.png")',
+                    image: 'url("assets/goods2.png")',
                     name: 'name name name name name name name name name',
                     price: '20.00'
                 }]
@@ -303,7 +303,7 @@ var IndexComponent = (function () {
         this.router = router;
         this.galleryHeight = '300px';
         this.showAdd2Cart = new Promise(function (res) { return res(false); });
-        this.add2CartBgImage = 'url("../../assets/goods2.png")';
+        this.add2CartBgImage = 'url("assets/goods2.png")';
         this.add2CartName = 'name name name name name name name name name name name name';
         this.add2CartPrice = '20.00';
     }
@@ -1077,13 +1077,13 @@ var GalleryComponent = (function () {
         this.animation = true;
         this.items = [];
         this._items = [{
-                src: 'url("../../assets/goods1.png")'
+                src: 'url("assets/goods1.png")'
             }, {
-                src: 'url("../../assets/goods2.png")'
+                src: 'url("assets/goods2.png")'
             }, {
-                src: 'url("../../assets/goods1.png")'
+                src: 'url("assets/goods1.png")'
             }, {
-                src: 'url("../../assets/goods2.png")'
+                src: 'url("assets/goods2.png")'
             }];
         this.activeIndex = 0;
     }
@@ -1238,23 +1238,23 @@ var GoodsList2ColsComponent = (function () {
     function GoodsList2ColsComponent(router) {
         this.router = router;
         this.list = [{
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }];
@@ -1512,21 +1512,17 @@ var SearchComponent = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `angular-cli.json`.
 var environment = {
-    production: false
+    production: true
 };
-//# sourceMappingURL=/Users/cls/Dev/Git/personal/store.demo.caols.tech/src/environment.js.map
+//# sourceMappingURL=/Users/cls/Dev/Git/personal/store.demo.caols.tech/src/environment.prod.js.map
 
 /***/ }),
 
 /***/ 679:
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n    z-index: 2000;\n\n    height: auto;\n}\n\n.blur {\n    position: fixed;\n    z-index: 1999;\n\n    left: calc(50% - 250px);\n    right: calc(50% - 250px);\n    bottom: 0;\n    top: 0;\n\n    background-color: rgba(0, 0, 0, 0.3);\n}\n\n.cover, .info, .close {\n    float: left;\n    margin-top: 10px;\n}\n\n.cover {\n    width: 50px;\n    height: 50px;\n    margin-left: 10px;\n    background-size: contain;\n}\n\n.info {\n    width: 360px;\n    margin-left: 10px;\n}\n\n.info > p {\n    width: 100%;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.info > span {\n    color: indianred;\n}\n\n.info > span:before {\n    content: '￥';\n}\n\n.close {\n    float: right;\n    width: 40px;\n    height: 40px;\n    background: url(\"../../assets/close.png\") no-repeat center;\n    background-size: contain;\n}\n\nhr {\n    clear: both;\n    width: 99%;\n    border-top: solid 1px #DDDDDD;\n    margin: 10px auto;\n    overflow: hidden;\n}\n\n.style-text {\n    margin-left: 1%;\n}\n\n.style-list {\n    list-style: none;\n    overflow: hidden;\n    margin: 0 1%;\n}\n\n.style-item {\n    float: left;\n    margin-top: 10px;\n    padding: 5px 10px;\n    border-radius: 5px;\n    border: solid 1px beige;\n    cursor: default;\n}\n\n.style-item:hover, .style-item:focus {\n    background-color: moccasin;\n}\n\n.style-item + .style-item {\n    margin-left: 10px;\n}\n\n.count-text {\n    float: left;\n    line-height: 25px;\n    margin-left: 1%;\n}\n\n.count {\n    float: right;\n    margin-right: 1%;\n    width: 90px;\n    height: 25px;\n    font-size: 0;\n}\n\n.count:after {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 0;\n    height: 100%;\n}\n\n.count > * {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.count > .minus, .count > .add, .count > input {\n    width: 30px;\n    height: 25px;\n    line-height: 23px;\n    text-align: center;\n    font-size: 1rem;\n    border: solid 1px #333333;\n    cursor: pointer;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.count > .minus {\n    border-right: none;\n}\n\n.count > .add {\n    border-left: none;\n}\n\n.count > .minus.unusable, .count > .add.unusable {\n    border-color: whitesmoke;\n}\n\n.count > input {\n    outline: none;\n}\n\n.btns {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin-top: 10px;\n}\n\n.btns > .btn {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    color: whitesmoke;\n    text-align: center;\n    padding: 10px 0;\n    cursor: default;\n}\n\n.btns > .btn:nth-child(1) {\n    background-color: indianred;\n}\n\n.btns > .btn:nth-child(2) {\n    background-color: red;\n}\n\n.btns > .btn:hover, .btns > .btn:focus {\n    background-color: darkred;\n}\n"
+module.exports = ".wrapper {\n    z-index: 2000;\n\n    height: auto;\n}\n\n.blur {\n    position: fixed;\n    z-index: 1999;\n\n    left: calc(50% - 250px);\n    right: calc(50% - 250px);\n    bottom: 0;\n    top: 0;\n\n    background-color: rgba(0, 0, 0, 0.3);\n}\n\n.cover, .info, .close {\n    float: left;\n    margin-top: 10px;\n}\n\n.cover {\n    width: 50px;\n    height: 50px;\n    margin-left: 10px;\n    background-size: contain;\n}\n\n.info {\n    width: 360px;\n    margin-left: 10px;\n}\n\n.info > p {\n    width: 100%;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.info > span {\n    color: indianred;\n}\n\n.info > span:before {\n    content: '￥';\n}\n\n.close {\n    float: right;\n    width: 40px;\n    height: 40px;\n    background: url(\"assets/close.png\") no-repeat center;\n    background-size: contain;\n}\n\nhr {\n    clear: both;\n    width: 99%;\n    border-top: solid 1px #DDDDDD;\n    margin: 10px auto;\n    overflow: hidden;\n}\n\n.style-text {\n    margin-left: 1%;\n}\n\n.style-list {\n    list-style: none;\n    overflow: hidden;\n    margin: 0 1%;\n}\n\n.style-item {\n    float: left;\n    margin-top: 10px;\n    padding: 5px 10px;\n    border-radius: 5px;\n    border: solid 1px beige;\n    cursor: default;\n}\n\n.style-item:hover, .style-item:focus {\n    background-color: moccasin;\n}\n\n.style-item + .style-item {\n    margin-left: 10px;\n}\n\n.count-text {\n    float: left;\n    line-height: 25px;\n    margin-left: 1%;\n}\n\n.count {\n    float: right;\n    margin-right: 1%;\n    width: 90px;\n    height: 25px;\n    font-size: 0;\n}\n\n.count:after {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 0;\n    height: 100%;\n}\n\n.count > * {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.count > .minus, .count > .add, .count > input {\n    width: 30px;\n    height: 25px;\n    line-height: 23px;\n    text-align: center;\n    font-size: 1rem;\n    border: solid 1px #333333;\n    cursor: pointer;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.count > .minus {\n    border-right: none;\n}\n\n.count > .add {\n    border-left: none;\n}\n\n.count > .minus.unusable, .count > .add.unusable {\n    border-color: whitesmoke;\n}\n\n.count > input {\n    outline: none;\n}\n\n.btns {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin-top: 10px;\n}\n\n.btns > .btn {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    color: whitesmoke;\n    text-align: center;\n    padding: 10px 0;\n    cursor: default;\n}\n\n.btns > .btn:nth-child(1) {\n    background-color: indianred;\n}\n\n.btns > .btn:nth-child(2) {\n    background-color: red;\n}\n\n.btns > .btn:hover, .btns > .btn:focus {\n    background-color: darkred;\n}\n"
 
 /***/ }),
 
@@ -1540,7 +1536,7 @@ module.exports = ".wrapper {\n    z-index: 3000;\n\n    height: auto;\n    overf
 /***/ 681:
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n    z-index: 2000;\n\n    height: auto;\n}\n\n.blur {\n    position: fixed;\n    z-index: 1999;\n\n    left: calc(50% - 250px);\n    right: calc(50% - 250px);\n    bottom: 0;\n    top: 0;\n\n    background-color: rgba(0, 0, 0, 0.3);\n}\n\n.wrapper > div + div {\n    border-top: solid 1px #DDDDDD;\n}\n\n.address {\n    width: 100%;\n    height: 100px;\n\n    cursor: default;\n\n    background-color: white;\n}\n\n.address > * {\n    float: left;\n}\n\n.address > .wrapper {\n    width: 430px;\n    height: 3.7em;\n    margin-top: 20px;\n}\n\n.wrapper > span {\n    display: inline-block;\n}\n\n.wrapper > span.name {\n    width: 200px;\n}\n\n.wrapper > span.name:before {\n    content: '收货人: ';\n    font-size: 1.1em;\n}\n\n.wrapper > span.phone {\n    width: 200px;\n    text-align: right;\n}\n\n.wrapper > p {\n    line-height: 1.3em;\n    height: 2.6em;\n    overflow: hidden;\n}\n\n.address > *:first-child {\n    width: 30px;\n    margin-top: 20px;\n    height: 80px;\n    background: url(\"../../../assets/location.png\") no-repeat top;\n    background-size: 80%;\n}\n\n.address > *:last-child {\n    line-height: 100px;\n    background-color: lightcyan;\n}\n\n.address > *:last-child:hover, .address > *:last-child:focus {\n    background-color: cyan;\n}\n\n.btn {\n    border-radius: 5px;\n    border: solid 1px #DDDDDD;\n    text-align: center;\n    padding: 10px;\n    margin: 10px 20px;\n    cursor: default;\n}\n\n.btn.second {\n    color: black;\n    background-color: lightcyan;\n}\n\n.btn.second:hover, .btn.second:focus {\n    background-color: cyan;\n}\n"
+module.exports = ".wrapper {\n    z-index: 2000;\n\n    height: auto;\n}\n\n.blur {\n    position: fixed;\n    z-index: 1999;\n\n    left: calc(50% - 250px);\n    right: calc(50% - 250px);\n    bottom: 0;\n    top: 0;\n\n    background-color: rgba(0, 0, 0, 0.3);\n}\n\n.wrapper > div + div {\n    border-top: solid 1px #DDDDDD;\n}\n\n.address {\n    width: 100%;\n    height: 100px;\n\n    cursor: default;\n\n    background-color: white;\n}\n\n.address > * {\n    float: left;\n}\n\n.address > .wrapper {\n    width: 430px;\n    height: 3.7em;\n    margin-top: 20px;\n}\n\n.wrapper > span {\n    display: inline-block;\n}\n\n.wrapper > span.name {\n    width: 200px;\n}\n\n.wrapper > span.name:before {\n    content: '收货人: ';\n    font-size: 1.1em;\n}\n\n.wrapper > span.phone {\n    width: 200px;\n    text-align: right;\n}\n\n.wrapper > p {\n    line-height: 1.3em;\n    height: 2.6em;\n    overflow: hidden;\n}\n\n.address > *:first-child {\n    width: 30px;\n    margin-top: 20px;\n    height: 80px;\n    background: url(\"assets/location.png\") no-repeat top;\n    background-size: 80%;\n}\n\n.address > *:last-child {\n    line-height: 100px;\n    background-color: lightcyan;\n}\n\n.address > *:last-child:hover, .address > *:last-child:focus {\n    background-color: cyan;\n}\n\n.btn {\n    border-radius: 5px;\n    border: solid 1px #DDDDDD;\n    text-align: center;\n    padding: 10px;\n    margin: 10px 20px;\n    cursor: default;\n}\n\n.btn.second {\n    color: black;\n    background-color: lightcyan;\n}\n\n.btn.second:hover, .btn.second:focus {\n    background-color: cyan;\n}\n"
 
 /***/ }),
 
@@ -1554,7 +1550,7 @@ module.exports = ""
 /***/ 683:
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n    float: left;\n    overflow: hidden;\n}\n\n.wrapper.names {\n    width: 100px;\n    border-right: solid 1px #DDDDDD;\n\n    background-color: white;\n}\n\n.wrapper.names .name {\n    padding: 0 10px;\n    line-height: 50px;\n    border-bottom: solid 1px #DDDDDD;\n\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n\n    cursor: default;\n}\n\n.wrapper.names .name.selected {\n    background-color: whitesmoke;\n}\n\n.wrapper.items {\n    width: 400px;\n\n    background-color: white;\n}\n\n.wrapper.items > .item-text {\n    position: absolute;\n    z-index: 1;\n}\n\n.wrapper.items .item-text {\n    width: 400px;\n    line-height: 30px;\n    border-bottom: solid 1px #DDDDDD;\n\n    background-color: #d1d1d1;\n\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.wrapper.items .item {\n    width: 400px;\n    height: 100px;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.item > * {\n    float: left;\n}\n\n.item > .cover {\n    width: 80px;\n    height: 80px;\n    margin: 10px 10px 0;\n    background-size: contain;\n}\n\n.item > .info {\n    width: 250px;\n}\n\n.info > .name {\n    margin: 20px 0;\n\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.item > .buy {\n    width: 40px;\n    height: 90px;\n\n    background: url(\"../../assets/shopping_cart.png\") no-repeat bottom;\n    background-size: 80%;\n}\n"
+module.exports = ".wrapper {\n    float: left;\n    overflow: hidden;\n}\n\n.wrapper.names {\n    width: 100px;\n    border-right: solid 1px #DDDDDD;\n\n    background-color: white;\n}\n\n.wrapper.names .name {\n    padding: 0 10px;\n    line-height: 50px;\n    border-bottom: solid 1px #DDDDDD;\n\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n\n    cursor: default;\n}\n\n.wrapper.names .name.selected {\n    background-color: whitesmoke;\n}\n\n.wrapper.items {\n    width: 400px;\n\n    background-color: white;\n}\n\n.wrapper.items > .item-text {\n    position: absolute;\n    z-index: 1;\n}\n\n.wrapper.items .item-text {\n    width: 400px;\n    line-height: 30px;\n    border-bottom: solid 1px #DDDDDD;\n\n    background-color: #d1d1d1;\n\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.wrapper.items .item {\n    width: 400px;\n    height: 100px;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.item > * {\n    float: left;\n}\n\n.item > .cover {\n    width: 80px;\n    height: 80px;\n    margin: 10px 10px 0;\n    background-size: contain;\n}\n\n.item > .info {\n    width: 250px;\n}\n\n.info > .name {\n    margin: 20px 0;\n\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.item > .buy {\n    width: 40px;\n    height: 90px;\n\n    background: url(\"assets/shopping_cart.png\") no-repeat bottom;\n    background-size: 80%;\n}\n"
 
 /***/ }),
 
@@ -1568,7 +1564,7 @@ module.exports = ".wrapper {\n    z-index: 4000;\n\n    height: auto;\n}\n\n.blu
 /***/ 685:
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n    z-index: 1000;\n\n    height: 50px;\n}\n\n.wrapper > * {\n    float: left;\n}\n\n.customer-service {\n    width: 50px;\n    height: 100%;\n\n    background: url(\"../../assets/Customer_Service.png\") no-repeat center;\n    background-size: 60%;\n\n    border-right: solid 1px #DDDDDD;\n}\n\n.shopping-cart {\n    width: 50px;\n    height: 100%;\n\n    background: url(\"../../assets/shopping_cart.png\") no-repeat center;\n    background-size: 60%;\n}\n\n.btns {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 400px;\n    height: 100%;\n    cursor: default;\n}\n\n.btns > .btn {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    color: whitesmoke;\n    text-align: center;\n    line-height: 50px;\n    cursor: default;\n}\n\n.btns > .btn:nth-child(1) {\n    background-color: indianred;\n}\n\n.btns > .btn:nth-child(2) {\n    background-color: red;\n}\n\n.btns > .btn:hover, .btns > .btn:focus {\n    background-color: darkred;\n}\n"
+module.exports = ".wrapper {\n    z-index: 1000;\n\n    height: 50px;\n}\n\n.wrapper > * {\n    float: left;\n}\n\n.customer-service {\n    width: 50px;\n    height: 100%;\n\n    background: url(\"assets/Customer_Service.png\") no-repeat center;\n    background-size: 60%;\n\n    border-right: solid 1px #DDDDDD;\n}\n\n.shopping-cart {\n    width: 50px;\n    height: 100%;\n\n    background: url(\"assets/shopping_cart.png\") no-repeat center;\n    background-size: 60%;\n}\n\n.btns {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    width: 400px;\n    height: 100%;\n    cursor: default;\n}\n\n.btns > .btn {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n    color: whitesmoke;\n    text-align: center;\n    line-height: 50px;\n    cursor: default;\n}\n\n.btns > .btn:nth-child(1) {\n    background-color: indianred;\n}\n\n.btns > .btn:nth-child(2) {\n    background-color: red;\n}\n\n.btns > .btn:hover, .btns > .btn:focus {\n    background-color: darkred;\n}\n"
 
 /***/ }),
 
@@ -1610,7 +1606,7 @@ module.exports = ""
 /***/ 691:
 /***/ (function(module, exports) {
 
-module.exports = "ul {\n    list-style: none;\n    overflow: hidden;\n}\n\nul > li {\n    float: left;\n    width: 220px;\n    background-color: #d1d1d1;\n    border: solid 1px #dddddd;\n}\n\nul > li:nth-child(odd) {\n    margin: 20px 10px 0 20px;\n}\n\nul > li:nth-child(even) {\n    margin: 20px 20px 0 10px;\n}\n\nul > li > div {\n    width: 218px;\n    height: 218px;\n    background-size: contain;\n    background-color: white;\n}\n\n\nul > li > p {\n    line-height: 1.2em;\n    height: 2.4em;\n    width: 100%;\n    padding: 0 .5em;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\nul > li > span {\n    float: left;\n    line-height: 40px;\n    color: indianred;\n}\n\nul > li > span:before {\n    content: '￥';\n}\n\nul > li > i {\n    float: right;\n    width: 40px;\n    height: 40px;\n\n    background: url(\"../../../assets/cart.png\") no-repeat center;\n    background-size: 80%;\n}\n"
+module.exports = "ul {\n    list-style: none;\n    overflow: hidden;\n}\n\nul > li {\n    float: left;\n    width: 220px;\n    background-color: #d1d1d1;\n    border: solid 1px #dddddd;\n}\n\nul > li:nth-child(odd) {\n    margin: 20px 10px 0 20px;\n}\n\nul > li:nth-child(even) {\n    margin: 20px 20px 0 10px;\n}\n\nul > li > div {\n    width: 218px;\n    height: 218px;\n    background-size: contain;\n    background-color: white;\n}\n\n\nul > li > p {\n    line-height: 1.2em;\n    height: 2.4em;\n    width: 100%;\n    padding: 0 .5em;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\nul > li > span {\n    float: left;\n    line-height: 40px;\n    color: indianred;\n}\n\nul > li > span:before {\n    content: '￥';\n}\n\nul > li > i {\n    float: right;\n    width: 40px;\n    height: 40px;\n\n    background: url(\"assets/cart.png\") no-repeat center;\n    background-size: 80%;\n}\n"
 
 /***/ }),
 
@@ -1624,14 +1620,14 @@ module.exports = ".flex-wrapper {\n    display: -webkit-box;\n    display: -ms-f
 /***/ 693:
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n    z-index: 1000;\n\n    height: 50px;\n}\n\n.wrapper > .btn {\n    float: left;\n    width: 150px;\n    height: 50px;\n    line-height: 50px;\n    text-align: center;\n}\n\n.wrapper > .btn > * {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.wrapper > .btn:before {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 20px;\n    height: 20px;\n    background: url(\"../../assets/menu.png\") no-repeat center;\n    background-size: 80%;\n}\n\n.wrapper > .btn:hover, .wrapper > .btn:focus {\n    background-color: #d1d1d1;\n}\n\n.wrapper > .btn + .btn {\n    border-left: solid 1px #DDDDDD;\n}\n\n.wrapper > .btn:first-child {\n    width: 50px;\n}\n\n.wrapper > .btn:first-child:before {\n    background: url(\"../../assets/home.png\") no-repeat center;\n    background-size: 110%;\n}\n\n.blur {\n    position: fixed;\n    z-index: 1001;\n\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n\n    background-color: transparent;\n}\n\nul.category {\n    left: calc(50% - 180px);\n}\n\nul.recommend {\n    left: calc(50% - 50px);\n}\n\nul.ordermanagement {\n    left: calc(50% + 150px);\n}\n\nul {\n    list-style: none;\n\n    position: fixed;\n    z-index: 1002;\n\n    bottom: 60px;\n\n    background-color: white;\n    border-radius: 5px;\n    border: solid 1px #dddddd;\n}\n\nul > li {\n    padding: 0 10px;\n    line-height: 40px;\n    max-width: 150px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\nul > li:first-child {\n    border-top-left-radius: 5px;\n    border-top-right-radius: 5px;\n}\n\nul > li:last-child {\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n}\n\nul > li:hover, ul > li:focus {\n    background-color: #d1d1d1;\n}\n\nul > li + li {\n    border-top: solid 1px #DDDDDD;\n}\n\nul:before {\n    content: '';\n    position: absolute;\n    left: calc(50% - 10px);\n    top: 100%;\n    width: 0;\n    height: 0;\n    border: solid 10px transparent;\n    border-top-color: #DDDDDD;\n}\n\nul:after {\n    content: '';\n    position: absolute;\n    left: calc(50% - 8px);\n    top: 100%;\n    width: 0;\n    height: 0;\n    border: solid 8px transparent;\n    border-top-color: white;\n}\n\n@media screen and (min-width: 520px) {\n    ul {\n        bottom: calc(240px / 1489 * 500 + 60px);\n    }\n}"
+module.exports = ".wrapper {\n    z-index: 1000;\n\n    height: 50px;\n}\n\n.wrapper > .btn {\n    float: left;\n    width: 150px;\n    height: 50px;\n    line-height: 50px;\n    text-align: center;\n}\n\n.wrapper > .btn > * {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.wrapper > .btn:before {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 20px;\n    height: 20px;\n    background: url(\"assets/menu.png\") no-repeat center;\n    background-size: 80%;\n}\n\n.wrapper > .btn:hover, .wrapper > .btn:focus {\n    background-color: #d1d1d1;\n}\n\n.wrapper > .btn + .btn {\n    border-left: solid 1px #DDDDDD;\n}\n\n.wrapper > .btn:first-child {\n    width: 50px;\n}\n\n.wrapper > .btn:first-child:before {\n    background: url(\"assets/home.png\") no-repeat center;\n    background-size: 110%;\n}\n\n.blur {\n    position: fixed;\n    z-index: 1001;\n\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n\n    background-color: transparent;\n}\n\nul.category {\n    left: calc(50% - 180px);\n}\n\nul.recommend {\n    left: calc(50% - 50px);\n}\n\nul.ordermanagement {\n    left: calc(50% + 150px);\n}\n\nul {\n    list-style: none;\n\n    position: fixed;\n    z-index: 1002;\n\n    bottom: 60px;\n\n    background-color: white;\n    border-radius: 5px;\n    border: solid 1px #dddddd;\n}\n\nul > li {\n    padding: 0 10px;\n    line-height: 40px;\n    max-width: 150px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\nul > li:first-child {\n    border-top-left-radius: 5px;\n    border-top-right-radius: 5px;\n}\n\nul > li:last-child {\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n}\n\nul > li:hover, ul > li:focus {\n    background-color: #d1d1d1;\n}\n\nul > li + li {\n    border-top: solid 1px #DDDDDD;\n}\n\nul:before {\n    content: '';\n    position: absolute;\n    left: calc(50% - 10px);\n    top: 100%;\n    width: 0;\n    height: 0;\n    border: solid 10px transparent;\n    border-top-color: #DDDDDD;\n}\n\nul:after {\n    content: '';\n    position: absolute;\n    left: calc(50% - 8px);\n    top: 100%;\n    width: 0;\n    height: 0;\n    border: solid 8px transparent;\n    border-top-color: white;\n}\n\n@media screen and (min-width: 520px) {\n    ul {\n        bottom: calc(240px / 1489 * 500 + 60px);\n    }\n}"
 
 /***/ }),
 
 /***/ 694:
 /***/ (function(module, exports) {
 
-module.exports = ".address {\n    width: 100%;\n    height: 100px;\n\n    cursor: default;\n\n    background-color: white;\n}\n\n.address > * {\n    float: left;\n}\n\n.address > .wrapper {\n    width: 450px;\n    height: 3.7em;\n    margin-top: 20px;\n}\n\n.wrapper > span {\n    display: inline-block;\n}\n\n.wrapper > span.name {\n    width: 200px;\n}\n\n.wrapper > span.name:before {\n    content: '收货人: ';\n    font-size: 1.1em;\n}\n\n.wrapper > span.phone {\n    width: 230px;\n    text-align: right;\n}\n\n.wrapper > p {\n    line-height: 1.3em;\n    height: 2.6em;\n    overflow: hidden;\n}\n\n.address > *:first-child {\n    width: 30px;\n    margin-top: 20px;\n    height: 80px;\n    background: url(\"../../assets/location.png\") no-repeat top;\n    background-size: 80%;\n}\n\n.address > *:last-child {\n    line-height: 100px;\n}\n\n.address + div {\n    width: 100%;\n    height: 3px;\n\n    background: url(\"../../assets/line.png\") repeat-x;\n}\n\n.goodslist {\n    list-style: none;\n    margin-top: 20px;\n}\n\n.goodslist > li:first-child {\n    border-top: solid 1px #DDDDDD;\n}\n\n.goodslist > li {\n    width: 100%;\n    height: 100px;\n\n    background-color: white;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.goodslist > li > * {\n    float: left;\n}\n\n.goodslist .cover {\n    width: 80px;\n    height: 80px;\n    margin: 10px;\n    background-size: contain;\n}\n\n.goodslist .info {\n    width: 350px;\n    margin-right: 14px;\n    margin-top: 20px;\n}\n\n.info > .name {\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.goodslist .count {\n    width: 36px;\n    height: 98px;\n    line-height: 98px;\n}\n\n.goodslist .count:before {\n    content: 'x';\n}\n\n.misc {\n    list-style: none;\n    background-color: white;\n}\n\n.misc > li {\n    width: 100%;\n    height: 50px;\n    padding: 0 10px;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.misc > li:after, .discount:after {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 0;\n    height: 100%;\n}\n\n.misc > li > *, .discount > * {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.message {\n    transition: height 1s;\n}\n\n.misc > li.message.focused {\n    height: 100px;\n}\n\n.message > span {\n    width: 100px;\n}\n\n.message > textarea {\n    outline: none;\n    resize: none;\n    background-color: transparent;\n\n    width: 360px;\n    height: 30px;\n    line-height: 30px;\n\n    transition: height 1s;\n}\n\n.message.focused > textarea {\n    height: 80px;\n    line-height: 20px;\n}\n\n.amount, .freight {\n    text-align: right;\n}\n\n.discount {\n    margin: 20px 0;\n    width: 100%;\n    height: 50px;\n    background-color: white;\n    border-top: solid 1px #DDDDDD;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.discount > span {\n    width: 100px;\n    padding-left: 10px;\n}\n\n.discount > p {\n    width: 380px;\n    text-align: right;\n}\n"
+module.exports = ".address {\n    width: 100%;\n    height: 100px;\n\n    cursor: default;\n\n    background-color: white;\n}\n\n.address > * {\n    float: left;\n}\n\n.address > .wrapper {\n    width: 450px;\n    height: 3.7em;\n    margin-top: 20px;\n}\n\n.wrapper > span {\n    display: inline-block;\n}\n\n.wrapper > span.name {\n    width: 200px;\n}\n\n.wrapper > span.name:before {\n    content: '收货人: ';\n    font-size: 1.1em;\n}\n\n.wrapper > span.phone {\n    width: 230px;\n    text-align: right;\n}\n\n.wrapper > p {\n    line-height: 1.3em;\n    height: 2.6em;\n    overflow: hidden;\n}\n\n.address > *:first-child {\n    width: 30px;\n    margin-top: 20px;\n    height: 80px;\n    background: url(\"assets/location.png\") no-repeat top;\n    background-size: 80%;\n}\n\n.address > *:last-child {\n    line-height: 100px;\n}\n\n.address + div {\n    width: 100%;\n    height: 3px;\n\n    background: url(\"assets/line.png\") repeat-x;\n}\n\n.goodslist {\n    list-style: none;\n    margin-top: 20px;\n}\n\n.goodslist > li:first-child {\n    border-top: solid 1px #DDDDDD;\n}\n\n.goodslist > li {\n    width: 100%;\n    height: 100px;\n\n    background-color: white;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.goodslist > li > * {\n    float: left;\n}\n\n.goodslist .cover {\n    width: 80px;\n    height: 80px;\n    margin: 10px;\n    background-size: contain;\n}\n\n.goodslist .info {\n    width: 350px;\n    margin-right: 14px;\n    margin-top: 20px;\n}\n\n.info > .name {\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.goodslist .count {\n    width: 36px;\n    height: 98px;\n    line-height: 98px;\n}\n\n.goodslist .count:before {\n    content: 'x';\n}\n\n.misc {\n    list-style: none;\n    background-color: white;\n}\n\n.misc > li {\n    width: 100%;\n    height: 50px;\n    padding: 0 10px;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.misc > li:after, .discount:after {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 0;\n    height: 100%;\n}\n\n.misc > li > *, .discount > * {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.message {\n    transition: height 1s;\n}\n\n.misc > li.message.focused {\n    height: 100px;\n}\n\n.message > span {\n    width: 100px;\n}\n\n.message > textarea {\n    outline: none;\n    resize: none;\n    background-color: transparent;\n\n    width: 360px;\n    height: 30px;\n    line-height: 30px;\n\n    transition: height 1s;\n}\n\n.message.focused > textarea {\n    height: 80px;\n    line-height: 20px;\n}\n\n.amount, .freight {\n    text-align: right;\n}\n\n.discount {\n    margin: 20px 0;\n    width: 100%;\n    height: 50px;\n    background-color: white;\n    border-top: solid 1px #DDDDDD;\n    border-bottom: solid 1px #DDDDDD;\n}\n\n.discount > span {\n    width: 100px;\n    padding-left: 10px;\n}\n\n.discount > p {\n    width: 380px;\n    text-align: right;\n}\n"
 
 /***/ }),
 
@@ -1645,7 +1641,7 @@ module.exports = ".wrapper {\n    position: fixed;\n    z-index: 1000;\n\n    le
 /***/ 696:
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n    width: 480px;\n    margin: 10px auto;\n    border-radius: 5px;\n    padding: 5px;\n    border: solid 1px #DDDDDD;\n    font-size: 0;\n    background-color: white;\n}\n\n.wrapper.focused {\n    box-shadow: 0 0 5px blue;\n}\n\n.wrapper > * {\n    display: inline-block;\n    vertical-align: middle;\n\n    height: 20px;\n    line-height: 20px;\n}\n\n.wrapper:after {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 0;\n    height: 100%;\n}\n\n.wrapper > i {\n    width: 20px;\n    background: url(\"../../assets/search.png\") no-repeat center;\n    background-size: contain;\n}\n\n.wrapper > input {\n    width: 440px;\n    font-size: 16px;\n    outline: none;\n    margin-left: 5px;\n}"
+module.exports = ".wrapper {\n    width: 480px;\n    margin: 10px auto;\n    border-radius: 5px;\n    padding: 5px;\n    border: solid 1px #DDDDDD;\n    font-size: 0;\n    background-color: white;\n}\n\n.wrapper.focused {\n    box-shadow: 0 0 5px blue;\n}\n\n.wrapper > * {\n    display: inline-block;\n    vertical-align: middle;\n\n    height: 20px;\n    line-height: 20px;\n}\n\n.wrapper:after {\n    content: '';\n    display: inline-block;\n    vertical-align: middle;\n    width: 0;\n    height: 100%;\n}\n\n.wrapper > i {\n    width: 20px;\n    background: url(\"assets/search.png\") no-repeat center;\n    background-size: contain;\n}\n\n.wrapper > input {\n    width: 440px;\n    font-size: 16px;\n    outline: none;\n    margin-left: 5px;\n}"
 
 /***/ }),
 
@@ -1701,7 +1697,7 @@ module.exports = "<div class=\"bottom-box wrapper\">\n    <div class=\"customer-
 /***/ 704:
 /***/ (function(module, exports) {
 
-module.exports = "<app-gallery [auto]=\"true\" [height]=\"galleryHeight\"></app-gallery>\n\n<div class=\"info\">\n    <p class=\"name\">{{name}}</p>\n    <span class=\"price\">{{price}}</span>\n    <hr>\n    <span>运费: </span><span class=\"price\">{{freight}}</span>\n    <span class=\"sales\">{{sales}}</span>\n</div>\n\n\n<div class=\"choose-style\" (click)=\"callAdd2CartOut()\">\n    <p>选择款式</p>\n    <p>></p>\n</div>\n\n<div class=\"btns\">\n    <div class=\"btn\" [class.active]=\"showGoodsDetail\"\n        (click)=\"showGoodsDetail=true\">商品详情</div>\n    <div class=\"btn\" [class.active]=\"!showGoodsDetail\"\n        (click)=\"showGoodsDetail=false\">商品评价</div>\n</div>\n\n<div class=\"goods-detail\" *ngIf=\"showGoodsDetail\">\n    <img src=\"../../assets/goods1.png\" alt=\"\">\n    <img src=\"../../assets/banner.png\" alt=\"\">\n    <img src=\"../../assets/goods2.png\" alt=\"\">\n</div>\n<div class=\"goods-comments\" *ngIf=\"!showGoodsDetail\">\n    <div class=\"btns\">\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===0\"\n            (click)=\"showCommentsLevel=0\">全部评价</div>\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===1\"\n            (click)=\"showCommentsLevel=1\">好评</div>\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===2\"\n            (click)=\"showCommentsLevel=2\">中评</div>\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===3\"\n            (click)=\"showCommentsLevel=3\">差评</div>\n    </div>\n    <div class=\"none-comment\" *ngIf=\"comments.length===0\">\n        没有评价\n    </div>\n    <ul class=\"comments\">\n        <li *ngFor=\"let comment of comments\">{{comment}}</li>\n    </ul>\n</div>\n\n<app-footer></app-footer>\n<app-ctrls (btnClick)=\"callAdd2CartOut()\"></app-ctrls>\n<app-add2cart [show]=\"showAdd2Cart | async\"\n              [bgImage]=\"bgImage\"\n              [name]=\"name\"\n              [price]=\"price\"></app-add2cart>\n"
+module.exports = "<app-gallery [auto]=\"true\" [height]=\"galleryHeight\"></app-gallery>\n\n<div class=\"info\">\n    <p class=\"name\">{{name}}</p>\n    <span class=\"price\">{{price}}</span>\n    <hr>\n    <span>运费: </span><span class=\"price\">{{freight}}</span>\n    <span class=\"sales\">{{sales}}</span>\n</div>\n\n\n<div class=\"choose-style\" (click)=\"callAdd2CartOut()\">\n    <p>选择款式</p>\n    <p>></p>\n</div>\n\n<div class=\"btns\">\n    <div class=\"btn\" [class.active]=\"showGoodsDetail\"\n        (click)=\"showGoodsDetail=true\">商品详情</div>\n    <div class=\"btn\" [class.active]=\"!showGoodsDetail\"\n        (click)=\"showGoodsDetail=false\">商品评价</div>\n</div>\n\n<div class=\"goods-detail\" *ngIf=\"showGoodsDetail\">\n    <img src=\"assets/goods1.png\" alt=\"\">\n    <img src=\"assets/banner.png\" alt=\"\">\n    <img src=\"assets/goods2.png\" alt=\"\">\n</div>\n<div class=\"goods-comments\" *ngIf=\"!showGoodsDetail\">\n    <div class=\"btns\">\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===0\"\n            (click)=\"showCommentsLevel=0\">全部评价</div>\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===1\"\n            (click)=\"showCommentsLevel=1\">好评</div>\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===2\"\n            (click)=\"showCommentsLevel=2\">中评</div>\n        <div class=\"btn\" [class.active]=\"showCommentsLevel===3\"\n            (click)=\"showCommentsLevel=3\">差评</div>\n    </div>\n    <div class=\"none-comment\" *ngIf=\"comments.length===0\">\n        没有评价\n    </div>\n    <ul class=\"comments\">\n        <li *ngFor=\"let comment of comments\">{{comment}}</li>\n    </ul>\n</div>\n\n<app-footer></app-footer>\n<app-ctrls (btnClick)=\"callAdd2CartOut()\"></app-ctrls>\n<app-add2cart [show]=\"showAdd2Cart | async\"\n              [bgImage]=\"bgImage\"\n              [name]=\"name\"\n              [price]=\"price\"></app-add2cart>\n"
 
 /***/ }),
 
@@ -1743,7 +1739,7 @@ module.exports = "<ul>\n    <li *ngFor=\"let item of list\" (click)=\"goToDetail
 /***/ 710:
 /***/ (function(module, exports) {
 
-module.exports = "<app-gallery [auto]=\"true\" [height]=\"galleryHeight\"></app-gallery>\n<app-search></app-search>\n\n<div class=\"flex-wrapper\">\n    <div class=\"btn\" (click)=\"goToCategory()\">全部商品</div>\n    <div class=\"btn\">分类</div>\n    <div class=\"btn\">分类分类</div>\n    <div class=\"btn\">分类分类分类</div>\n</div>\n\n<div class=\"flex-wrapper col margin-top-10 bg-white\">\n    <img src=\"../../assets/banner.png\" alt=\"\">\n    <img src=\"../../assets/goods2.png\" alt=\"\">\n</div>\n\n<app-goods-list-2-cols (add2Cart)=\"add2cartClicked($event)\"></app-goods-list-2-cols>\n\n<app-footer></app-footer>\n<app-menu></app-menu>\n<app-add2cart [show]=\"showAdd2Cart | async\"\n              [bgImage]=\"add2CartBgImage\"\n              [name]=\"add2CartName\"\n              [price]=\"add2CartPrice\"></app-add2cart>\n"
+module.exports = "<app-gallery [auto]=\"true\" [height]=\"galleryHeight\"></app-gallery>\n<app-search></app-search>\n\n<div class=\"flex-wrapper\">\n    <div class=\"btn\" (click)=\"goToCategory()\">全部商品</div>\n    <div class=\"btn\">分类</div>\n    <div class=\"btn\">分类分类</div>\n    <div class=\"btn\">分类分类分类</div>\n</div>\n\n<div class=\"flex-wrapper col margin-top-10 bg-white\">\n    <img src=\"assets/banner.png\" alt=\"\">\n    <img src=\"assets/goods2.png\" alt=\"\">\n</div>\n\n<app-goods-list-2-cols (add2Cart)=\"add2cartClicked($event)\"></app-goods-list-2-cols>\n\n<app-footer></app-footer>\n<app-menu></app-menu>\n<app-add2cart [show]=\"showAdd2Cart | async\"\n              [bgImage]=\"add2CartBgImage\"\n              [name]=\"add2CartName\"\n              [price]=\"add2CartPrice\"></app-add2cart>\n"
 
 /***/ }),
 

@@ -31,7 +31,7 @@ export class CategoryComponent implements OnInit {
     itemsLoc = 'translateY(' + this.numItemsLoc + ')';
     selectedNameLoc = 'translateY(' + this.numSelectedNameLoc + ')';
     showAdd2Cart = new Promise(res => res(false));
-    add2CartBgImage = 'url("../../assets/goods2.png")';
+    add2CartBgImage = 'url("assets/goods2.png")';
     add2CartName = 'name name name name name name name name name name name name';
     add2CartPrice = '20.00';
 
@@ -40,53 +40,53 @@ export class CategoryComponent implements OnInit {
     ngOnInit() {
         const data = {
             "分类": [{
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }],
             "分类分类": [{
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }],
             "分类分类分类分类": [{
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods1.png")',
+                image: 'url("assets/goods1.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }, {
-                image: 'url("../../assets/goods2.png")',
+                image: 'url("assets/goods2.png")',
                 name: 'name name name name name name name name name',
                 price: '20.00'
             }]

@@ -39,9 +39,11 @@
 
                     data['target-densitydpi'] = medium_dpi;
                 } else {
-                    var scale = window.screen.availWidth / data.width;
+                    alert(window.screen.availWidth);
+                    var scale = data.width / window.screen.availWidth;
 
                     scale = scale.toFixed(2);
+                    alert(scale);
 
                     data['initial-scale'] = data['maximum-scale'] = data['minimum-scale'] = scale;
                 }

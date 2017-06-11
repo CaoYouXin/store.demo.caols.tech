@@ -12,7 +12,7 @@
     width: 50px;
     height: 100%;
 
-    background: url("../../assets/Customer_Service.png") no-repeat center;
+    background: url("assets/Customer_Service.png") no-repeat center;
     background-size: 60%;
 
     border-right: solid 1px #DDDDDD;
@@ -22,7 +22,7 @@
     width: 50px;
     height: 100%;
 
-    background: url("../../assets/shopping_cart.png") no-repeat center;
+    background: url("assets/shopping_cart.png") no-repeat center;
     background-size: 60%;
 }
 

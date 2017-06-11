@@ -50,6 +50,6 @@ ul > li > i {
     width: 40px;
     height: 40px;
 
-    background: url("../../../assets/cart.png") no-repeat center;
+    background: url("assets/cart.png") no-repeat center;
     background-size: 80%;
 }
